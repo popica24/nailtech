@@ -670,7 +670,7 @@ h6 {
   content: "";
   height: 60px;
   width: 60px;
-  background-image: url("/public/shapes/shape-4.jpg");
+  background-image: url("/shapes/shape-4.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -681,7 +681,7 @@ h6 {
 
 .bix-hero-img .hero-inner-img:before {
   content: "";
-  background-image: url("/public/hero-border.png");
+  background-image: url("/hero-border.png");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 550px;
@@ -710,7 +710,7 @@ h6 {
   content: "";
   height: 50px;
   width: 25px;
-  background-image: url("/public/shapes/shape-2.png");
+  background-image: url("/shapes/shape-2.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -734,7 +734,7 @@ h6 {
   content: "";
   height: 70px;
   width: 33px;
-  background-image: url("/public/shapes/shape-3.png");
+  background-image: url("/shapes/shape-3.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -877,7 +877,7 @@ h6 {
   content: "";
   height: 200px;
   width: 165px;
-  background-image: url("/public/shapes/shape-1-book.png");
+  background-image: url("/shapes/shape-1-book.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -905,7 +905,7 @@ h6 {
   content: "";
   height: 50px;
   width: 50px;
-  background-image: url("/public/shapes/shape-2-flower.png");
+  background-image: url("/shapes/shape-2-flower.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -957,7 +957,7 @@ h6 {
   content: "";
   height: 30px;
   width: 60px;
-  background-image: url("/public/shapes/whitespace-about.png");
+  background-image: url("/shapes/whitespace-about.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -987,7 +987,7 @@ h6 {
   content: "";
   height: 25px;
   width: 67px;
-  background-image: url("/public/shapes/whitespace-about.png");
+  background-image: url("/shapes/whitespace-about.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
@@ -1105,7 +1105,7 @@ h6 {
   content: "";
   height: 110px;
   width: 100px;
-  background-image: url("/public/shapes/shape-1-backpack.png");
+  background-image: url("/shapes/shape-1-backpack.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
