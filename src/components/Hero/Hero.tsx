@@ -62,12 +62,13 @@ const Hero = () => {
                 data-aos-duration="2000"
                 data-aos-delay="900"
               >
-                <button
+                <a
+                  href="#cursuri-fizice"
                   type="button"
                   className="bix-button m-[10px] cursor-pointer transition-all duration-[0.3s] ease-in-out py-[10px] px-[15px] montserrat-400 text-[14px] font-semibold leading-[1.2] bg-[#fff] text-[#2c2c2c] border-[1px] border-solid border-[#2c2c2c] rounded-[15px] hover:bg-[var(--roz-prafuit-pastelat)] hover:border-[var(--crem-cald)]"
                 >
                   Inscrie-te si tu !
-                </button>
+                </a>
                 <button
                   type="button"
                   className="modal-trigger cursor-pointer bix-modal-toggle bix-button m-[10px] transition-all duration-[0.3s] ease-in-out py-[10px] px-[15px] montserrat-400 text-[14px] font-semibold leading-[1.2] bg-[#fff] text-[#2c2c2c] border-[1px] border-solid border-[#2c2c2c] rounded-[15px] hover:bg-[var(--roz-prafuit-pastelat)] hover:border-[var(--crem-cald)]"

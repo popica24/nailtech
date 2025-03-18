@@ -48,7 +48,7 @@ const AboutMe = () => {
                 </p>
                 <div className="inner-sign-items">
                   <img
-                    src="shapes/sign.avif"
+                    src="shapes/sign.jpg"
                     alt="sign"
                     className="white-mode w-[120px] inline"
                   />
@@ -87,7 +87,7 @@ const AboutMe = () => {
                         xlinkHref="#circle"
                         className="text-[10px] text-[#2c2c2c] tracking-[1.3px]"
                       >
-                        Despre Mine&nbsp; - Despre Mine &nbsp;
+                        Despre Mine ------ Despre Mine ------
                       </textPath>
                     </text>
                   </svg>
