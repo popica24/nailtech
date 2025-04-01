@@ -1,10 +1,35 @@
 /* main js */
 (function ($) {
-  "use strict";
+  ("use strict");
 
   /* Loader */
-  $(window).on("load", function () {
-    $(".bix-loader").fadeOut("slow");
+  // Handle multiple navigation events
+  $(document).ready(function () {
+    // Initial page load handler
+    $(window).on("load", fadeOutLoader);
+
+    // Handle navigation within single-page applications
+    $(document).on("click", "a[href]", function () {
+      $(".bix-loader").fadeIn("fast");
+      setTimeout(fadeOutLoader, 300); // Short delay for the loader to be visible
+    });
+
+    // For browser navigation (back/forward buttons)
+    $(window).on("popstate", function () {
+      $(".bix-loader").fadeIn("fast");
+      setTimeout(fadeOutLoader, 300);
+    });
+
+    // For programmatic navigation or hash changes
+    $(window).on("hashchange", fadeOutLoader);
+
+    // When content is loaded via AJAX
+    $(document).ajaxComplete(fadeOutLoader);
+
+    // Helper function to fade out loader
+    function fadeOutLoader() {
+      $(".bix-loader").fadeOut("slow");
+    }
   });
 
   /*-- On click menu scroll section to section -- */

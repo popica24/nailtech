@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Products = () => {
   return (
     <>
@@ -31,10 +33,30 @@ const Products = () => {
             </div>
             <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
               <div className="flex flex-wrap w-full mb-[-24px]">
-                <Product name="Produs 1" description="Descriere" price="65" />
-                <Product name="Produs 2" description="Descriere" price="80" />
-                <Product name="Produs 3" description="Descriere" price="35" />
-                <Product name="Produs 4" description="Descriere" price="70" />
+                <Product
+                  link="produs-1"
+                  name="Produs 1"
+                  description="Descriere"
+                  price="65"
+                />
+                <Product
+                  link="produs-2"
+                  name="Produs 2"
+                  description="Descriere"
+                  price="80"
+                />
+                <Product
+                  link="produs-3"
+                  name="Produs 3"
+                  description="Descriere"
+                  price="35"
+                />
+                <Product
+                  link="produs-4"
+                  name="Produs 4"
+                  description="Descriere"
+                  price="70"
+                />
               </div>
             </div>
           </div>
@@ -51,11 +73,15 @@ type ProductProps = {
   name: string;
   description: string;
   price: string;
+  link: string;
 };
 
 const Product = (props: ProductProps) => {
   return (
-    <div className="montserrat-300 cursor-pointer mx-auto mt-11 w-80 transform overflow-hidden bg-white shadow-md duration-300 hover:scale-105 hover:shadow-lg">
+    <Link
+      to={props.link}
+      className="montserrat-300 cursor-pointer mx-auto mt-11 w-80 transform overflow-hidden bg-white shadow-md duration-300 hover:scale-105 hover:shadow-lg"
+    >
       <img
         className="h-48 w-full object-cover object-center"
         src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
@@ -70,6 +96,6 @@ const Product = (props: ProductProps) => {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

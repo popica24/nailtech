@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Props = {
   visible: boolean;
   closeMenu: () => void;
@@ -36,60 +38,60 @@ const MobileMenu = (props: Props) => {
           <div className="bix-menu-content">
             <ul className="bix-menu">
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#home"
+                <Link
+                  to="/"
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Acasa
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#home"
+                <Link
+                  to={"#cursuri-fizice"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Cursuri Fizice
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#about"
+                <Link
+                  to={"/cursuri-online"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Cursuri Online
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#bixexperience"
+                <Link
+                  to={"/shop"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Shop
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#services"
+                <Link
+                  to={"#recenzii"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Recenzii
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#projects"
+                <Link
+                  to={"#galerie-foto"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Galerie Foto
-                </a>
+                </Link>
               </li>
               <li className="nav-item relative">
-                <a
-                  href="https://maraviyainfotech.com/projects/biox-tailwind/onepage/index.html#testimonial"
+                <Link
+                  to={"#despre-mine"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Despre Mine
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

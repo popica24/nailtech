@@ -1,6 +1,9 @@
 const AboutMe = () => {
   return (
-    <section className="section-about relative py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px] px-12 md:px-0">
+    <section
+      id="despre-mine"
+      className="section-about relative py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px] px-12 md:px-0"
+    >
       <div className="container flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
         <div className="flex flex-wrap w-full mb-[-30px]">
           <div className="w-full px-[12px]">

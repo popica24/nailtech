@@ -1,19 +1,14 @@
 import AboutMe from "./components/AboutMe";
 import Achivements from "./components/Achivements";
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero";
-import Loader from "./components/Loader/Loader";
-import Navbar from "./components/Navbar";
 import Courses from "./components/Courses";
+import Hero from "./components/Hero";
+import Hire from "./components/Hire";
 import Products from "./components/Products";
 import Testimonials from "./components/Testimonials";
-import Hire from "./components/Hire";
 
-function App() {
+const Homepage = () => {
   return (
     <>
-      <Loader />
-      <Navbar />
       <Hero />
       <AboutMe />
       <Achivements />
@@ -21,9 +16,8 @@ function App() {
       <Products />
       <Testimonials />
       <Hire />
-      <Footer />
     </>
   );
-}
+};
 
-export default App;
+export default Homepage;

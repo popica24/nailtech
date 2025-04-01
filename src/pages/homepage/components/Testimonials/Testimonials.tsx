@@ -55,7 +55,7 @@ const Testimonials = () => {
   return (
     <section
       className="section-testimonials relative py-12 max-lg:py-10 max-md:py-8"
-      id="testimonial"
+      id="recenzii"
     >
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap w-full">
