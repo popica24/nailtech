@@ -1,3 +1,5 @@
+import Footer from "../../layout/components/Footer";
+
 const Product = () => {
   return (
     <section className="montserrat-400 section-hero mt-[100px] relative pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
@@ -170,6 +172,7 @@ const Product = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

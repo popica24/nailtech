@@ -67,9 +67,6 @@ const Hire = () => {
                           </textPath>
                         </text>
                       </svg>
-                      <div className="inner-contact absolute top-[0] left-[0] right-[0] flex justify-center items-center h-full w-[0]">
-                        <i className="ri-arrow-right-up-line text-[#111a24] text-[30px] leading-[26px] font-normal tracking-[0.03rem]"></i>
-                      </div>
                     </a>
                   </div>
                 </div>
