@@ -1,3 +1,4 @@
+import Footer from "../../layout/components/Footer";
 import AboutMe from "./components/AboutMe";
 import Achivements from "./components/Achivements";
 import Courses from "./components/Courses";
@@ -16,6 +17,7 @@ const Homepage = () => {
       <Products />
       <Testimonials />
       <Hire />
+      <Footer />
     </>
   );
 };
