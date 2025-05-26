@@ -1,9 +1,6 @@
-import { Link } from "react-router-dom";
-
 const Products = () => {
   return (
     <>
-      {" "}
       <section
         className="section-projects py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px]"
         id="projects"
@@ -18,8 +15,8 @@ const Products = () => {
                 data-aos-delay="400"
               >
                 <h4 className="montserrat-300 text-[36px] font-bold text-[#111a24] tracking-[0.03rem] leading-[1.2] max-[1199px]:text-[32px] max-[767px]:text-[28px] max-[575px]:text-[24px]">
-                  Produsele{" "}
-                  <span className="text-[var(--crem-cald)]">Mele</span>
+                  Produsele
+                  <span className="text-[var(--crem-cald)] ms-2">Mele</span>
                 </h4>
               </div>
               <div
@@ -31,33 +28,27 @@ const Products = () => {
                 <span className="inner-border relative flex justify-center"></span>
               </div>
             </div>
-            <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-              <div className="flex flex-wrap w-full mb-[-24px]">
-                <Product
-                  link="produs-1"
-                  name="Produs 1"
-                  description="Descriere"
-                  price="65"
-                />
-                <Product
-                  link="produs-2"
-                  name="Produs 2"
-                  description="Descriere"
-                  price="80"
-                />
-                <Product
-                  link="produs-3"
-                  name="Produs 3"
-                  description="Descriere"
-                  price="35"
-                />
-                <Product
-                  link="produs-4"
-                  name="Produs 4"
-                  description="Descriere"
-                  price="70"
-                />
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[-24px]">
+              <Product
+                image="Products/Pro6/cover.jpg"
+                link="produse/pro6"
+                name="Pusher Pro 6"
+              />
+              <Product
+                image="Products/Pro5/cover.jpg"
+                link="produse/pro5"
+                name="Pusher Pro 5"
+              />
+              <Product
+                image="Products/Pro19/cover.jpg"
+                link="produse/pro19"
+                name="Foarfecuta Pro 19"
+              />
+              <Product
+                image="Products/Pro19/cover.jpg"
+                link="produse/pro20"
+                name="Foarfecuta Pro 20"
+              />
             </div>
           </div>
         </div>
@@ -71,31 +62,63 @@ export default Products;
 type ProductProps = {
   image?: string;
   name: string;
-  description: string;
-  price: string;
   link: string;
 };
 
-const Product = (props: ProductProps) => {
+const Product = ({ image, name, link }: ProductProps) => {
   return (
-    <Link
-      to={props.link}
-      className="montserrat-300 cursor-pointer mx-auto mt-11 w-80 transform overflow-hidden bg-white shadow-md duration-300 hover:scale-105 hover:shadow-lg"
+    <div
+      id="cursuri-fizice"
+      className={`w-full px-[12px] mb-[24px] item`}
+      style={{ display: "inline-block" }}
+      data-bound=""
     >
-      <img
-        className="h-48 w-full object-cover object-center"
-        src="https://images.unsplash.com/photo-1674296115670-8f0e92b1fddb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-        alt="Product Image"
-      />
-      <div className="p-4">
-        <h2 className="mb-2 text-lg font-medium text-gray-900">{props.name}</h2>
-        <p className="mb-2 text-base text-gray-700">{props.description}</p>
-        <div className="flex items-center">
-          <p className="mr-2 text-lg font-semibold text-gray-900">
-            RON {props.price}
-          </p>
+      <div className="bix-project-card">
+        <div className="project-image relative px-[30px] pb-[30px] overflow-hidden rounded-[30px] z-[1] max-[480px]:px-[20px] max-[480px]:pb-[20px]">
+          <a href={link} className="flex rounded-[30px] overflow-hidden">
+            <div className="overlay-project-card transition-all duration-[0.3s] ease-in-out opacity-[0] w-[calc(100%-60px)] h-[calc(100%-30px)] absolute top-[0] right-[30px] rounded-[30px] flex items-center justify-center bg-[#00000080] z-[45] overflow-hidden max-[480px]:p-[0] max-[480px]:w-[calc(100%-40px)] max-[480px]:h-[calc(100%-20px)] max-[480px]:top-[0] max-[480px]:bottom-[0] max-[480px]:right-[20px] max-[480px]:left-[20px]"></div>
+            <img
+              src={image}
+              alt={name}
+              className="transition-all duration-[0.3s] ease-in-out w-full aspect-square"
+            />
+          </a>
+        </div>
+        <div className="project-contact pt-[170px] pb-[30px] px-[30px] mt-[-175px] relative z-[0] border-[1px] border-solid border-[#1b1c20] rounded-[30px] max-[480px]:pb-[20px] max-[480px]:px-[20px]">
+          <div className="flex md:justify-end md:items-end w-full text-center">
+            <a
+              href={link}
+              type="button"
+              className="w-full inline-flex items-center cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
+            >
+              <span className="w-full flex-1">{name}</span>
+              <svg
+                width={20}
+                height={20}
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M10 7L15 12L10 17"
+                    stroke="#FFFFFF"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 };

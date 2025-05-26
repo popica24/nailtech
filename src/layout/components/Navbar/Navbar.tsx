@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
-import ShoppingCart from "../ShoppingCart";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -36,7 +35,7 @@ const Navbar = () => {
               <nav className="navbar navbar-expand-lg bix-navbar transition-all duration-[0.3s] ease-in-out p-[15px] bg-white border-[1px] border-solid border-[#111a24] rounded-[30px] relative z-[3] flex items-center justify-between max-[992px]:flex-nowrap">
                 <Link className="navbar-brand" to="/">
                   <img
-                    src="logo.jpg"
+                    src="/logo.jpg"
                     alt="logo"
                     className="bix-logo w-[90px] flex rounded-2xl"
                   />
@@ -50,9 +49,6 @@ const Navbar = () => {
                   >
                     <i className="fa-solid fa-bars"></i>
                   </button>
-                  <div className="mx-8 mt-1 bock md:hidden">
-                    <ShoppingCart />
-                  </div>
                 </div>
                 <div
                   className="bix-main-menu flex relative justify-end max-[991px]:hidden"
@@ -107,16 +103,13 @@ const Navbar = () => {
                         Galerie Foto
                       </Link>
                     </li>
-                    <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
+                    <li className="nav-item transition-all duration-[0.3s] ease-in-out mx-[30px]">
                       <a
                         href="/#despre-mine"
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
                       >
                         Despre Mine
                       </a>
-                    </li>
-                    <li className="nav-item mt-2 transition-all duration-[0.3s] ease-in-out mx-[30px] hidden md:block">
-                      <ShoppingCart />
                     </li>
                   </ul>
                 </div>

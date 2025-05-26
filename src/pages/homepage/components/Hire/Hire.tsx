@@ -23,16 +23,7 @@ const Hire = () => {
                 >
                   De ce nu luam legatura ?
                 </h4>
-                <p
-                  className="montserrat-300 text-[15px] font-light text-[#fff] leading-[26px] tracking-[0.03rem] mt-1"
-                  data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="600"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                  perferendis laudantium ipsa fugiat minima debitis. Magni
-                  veritatis tenetur perferendis delectus?
-                </p>
+
                 <div
                   className="inner-circle-items mt-[40px] flex justify-center items-center"
                   data-aos="fade-up"

@@ -1,8 +1,4 @@
-import { useState } from "react";
-import MyWork from "../../../../components/MyWork";
-
 const Hero = () => {
-  const [open, setOpen] = useState(false);
   return (
     <>
       <section className="section-hero h-[800px] mt-[100px] relative pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
@@ -70,23 +66,23 @@ const Hero = () => {
                   <a
                     href="#cursuri-fizice"
                     type="button"
-                    className="bix-button m-[10px] cursor-pointer transition-all duration-[0.3s] ease-in-out py-[10px] px-[15px] montserrat-400 text-[14px] font-semibold leading-[1.2] bg-[#fff] text-[#2c2c2c] border-[1px] border-solid border-[#2c2c2c] rounded-[15px] hover:bg-[var(--roz-prafuit-pastelat)] hover:border-[var(--crem-cald)]"
+                    className="bix-button m-[10px] cursor-pointer transition-all duration-[0.3s] ease-in-out py-[15px] px-[20px] montserrat-400 text-[18px] font-semibold leading-[1.2] text-white rounded-[5px] bg-[#A57865]"
                   >
                     Inscrie-te si tu !
                   </a>
-                  <div
-                    onClick={() => setOpen(true)}
-                    className="cursor-pointer m-[10px] transition-all duration-[0.3s] ease-in-out py-[10px] px-[15px] montserrat-400 text-[14px] font-semibold leading-[1.2] bg-[#fff] text-[#2c2c2c] border-[1px] border-solid border-[#2c2c2c] rounded-[15px] hover:bg-[var(--roz-prafuit-pastelat)] hover:border-[var(--crem-cald)]"
+                  <a
+                    href="#cursuri-fizice"
+                    type="button"
+                    className="bix-button m-[10px] cursor-pointer transition-all duration-[0.3s] ease-in-out py-[15px] px-[20px] montserrat-400 text-[18px] font-semibold leading-[1.2] text-white rounded-[5px] bg-[#A57865]"
                   >
-                    Vezi lucrari <i className="fa-solid fa-photo-film"></i>
-                  </div>
+                    Produsele mele
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <MyWork open={open} setOpen={setOpen} />
     </>
   );
 };

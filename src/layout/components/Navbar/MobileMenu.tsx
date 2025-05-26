@@ -47,7 +47,7 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"#cursuri-fizice"}
+                  to={"/#cursuri-fizice"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Cursuri Fizice
@@ -71,7 +71,7 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"#recenzii"}
+                  to={"/#recenzii"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Recenzii
@@ -79,7 +79,7 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"#galerie-foto"}
+                  to={"/#galerie-foto"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Galerie Foto
@@ -87,7 +87,7 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"#despre-mine"}
+                  to={"/#despre-mine"}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Despre Mine
