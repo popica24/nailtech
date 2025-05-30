@@ -1,6 +1,14 @@
+import { useCart } from "../../CartContext";
+import { items } from "../../data";
 import Footer from "../../layout/components/Footer";
 
 const Pro19 = () => {
+  const { addToCart } = useCart();
+  const handleAddToCart = () => {
+    const id = 3;
+    const item = items.find((item) => item.id === id);
+    if (item) addToCart(item.id, item.name, item.price);
+  };
   return (
     <section className="montserrat-400 section-hero mt-[100px] relative pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
       <div className="bg-white">
@@ -70,7 +78,11 @@ const Pro19 = () => {
             />
           </div>
 
-          <div className="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24">
+          <div
+            className="mx-auto max-w-2xl px-4 pt-10 pb-16 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto_auto_1fr] lg:gap-x-8 lg:px-8 lg:pt-16 lg:pb-24"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
                 Foarfecuta Pro 19
@@ -82,10 +94,11 @@ const Pro19 = () => {
               <p className="text-3xl tracking-tight text-gray-900">--.-- RON</p>
 
               <button
+                onClick={handleAddToCart}
                 type="submit"
                 className="mt-10 cursor-pointer flex w-full items-center justify-center rounded-md border border-transparent bg-[#A57865] px-8 py-3 text-base font-medium text-white hover:[var(--crem-cald)] focus:ring-2 focus:ring-[var(--nude-roz)] focus:ring-offset-2 focus:outline-hidden"
               >
-                Cumpara
+                Adauga in cos
               </button>
             </div>
 

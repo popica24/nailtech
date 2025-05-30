@@ -4,7 +4,12 @@ const MaintenanceCourse = () => {
   return (
     <>
       <div className="container flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-        <div className="mt-30 relative w-full h-[500px] md:h-[320px]" id="home">
+        <div
+          className="mt-30 relative w-full h-[500px] md:h-[320px]"
+          id="home"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <div className="absolute inset-0 opacity-40">
             <img
               src="/Courses/baza2.jpg"
@@ -24,7 +29,7 @@ const MaintenanceCourse = () => {
                 aplicabile imediat în salon.
               </p>
               <a
-                href="/"
+                href="https://wa.me/+40749095803?text=Buna%20%21%20Legat%20de%20cursul%20de%20mentenanta%2C%20ma%20numesc..."
                 className="w-full cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
               >
                 Inscrie-te si tu !
@@ -33,7 +38,13 @@ const MaintenanceCourse = () => {
           </div>
         </div>
 
-        <section className="py-10 montserrat-400" id="services">
+        <section
+          className="py-10 montserrat-400"
+          id="services"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="400"
+        >
           <div className="container mx-auto px-4">
             <h2 className="text-3xl text-[#C8A875] mb-8 pb-8 text-center montserrat-300">
               Ce vei invata ?
@@ -100,7 +111,12 @@ const MaintenanceCourse = () => {
           </div>
         </section>
 
-        <section className="text-gray-700 body-font mt-10 w-full mx-auto">
+        <section
+          className="text-gray-700 body-font mt-10 w-full mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="600"
+        >
           <div className="flex justify-center text-3xl text-[#C8A875] text-center montserrat-300">
             De ce cursurile mele ?
           </div>
@@ -118,11 +134,11 @@ const MaintenanceCourse = () => {
                     viewBox="0 0 496 496"
                     xmlSpace="preserve"
                   >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                     <g
                       id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
                       <g>
@@ -183,7 +199,13 @@ const MaintenanceCourse = () => {
           </div>
         </section>
 
-        <section className="text-gray-700 body-font w-full" id="gallery">
+        <section
+          className="text-gray-700 body-font w-full"
+          id="gallery"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="800"
+        >
           <div className="flex justify-center text-3xl montserrat-300 text-center py-10 text-[#C8A875]">
             De la cursuri
           </div>
@@ -220,7 +242,12 @@ const MaintenanceCourse = () => {
           </div>
         </section>
 
-        <section className="bg-gray-100 w-full mx-auto">
+        <section
+          className="bg-gray-100 w-full mx-auto"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay="1000"
+        >
           <div className="py-8">
             <div className="mx-auto text-center">
               <h2
@@ -247,13 +274,13 @@ const MaintenanceCourse = () => {
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
-                              stroke-width="1.5"
+                              strokeWidth="1.5"
                               stroke="currentColor"
                               className="w-6 h-6 me-4"
                             >
                               <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
                                 d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
                               />
                             </svg>

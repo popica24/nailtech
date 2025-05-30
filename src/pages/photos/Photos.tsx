@@ -2,50 +2,27 @@ import Footer from "../../layout/components/Footer";
 
 const Photos = () => {
   return (
-    <section className="mt-[100px] relative pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
+    <section className="mt-[150px] container flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-full mb-12">
         <div className="grid gap-4">
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              src="Photos/1.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+              src="Photos/2.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div className="grid gap-4">
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+              src="Photos/3.jpg"
               alt=""
             />
           </div>
@@ -54,21 +31,21 @@ const Photos = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+              src="Photos/4.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+              src="Photos/5.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+              src="Photos/6.jpg"
               alt=""
             />
           </div>
@@ -77,21 +54,44 @@ const Photos = () => {
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+              src="Photos/7.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+              src="Photos/8.jpg"
               alt=""
             />
           </div>
           <div>
             <img
               className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+              src="Photos/9.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="grid gap-4">
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="Photos/10.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="Photos/11.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="h-auto max-w-full rounded-lg"
+              src="Photos/12.jpg"
               alt=""
             />
           </div>

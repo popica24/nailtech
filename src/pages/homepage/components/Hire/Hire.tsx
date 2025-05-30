@@ -13,7 +13,7 @@ const Hire = () => {
                   data-aos-duration="2000"
                   data-aos-delay="200"
                 >
-                  Buna <span>Idee</span>
+                  Buna Idee
                 </h2>
                 <h4
                   className="mb-[16px] montserrat-300 text-[20px] max-[575px]:text-[18px] font-semibold text-[#fff] tracking-[0.03rem] leading-[1.2]"
@@ -32,7 +32,7 @@ const Hire = () => {
                 >
                   <div className="bix-rounded-circle relative h-[150px] w-[150px] bg-[#fff] rounded-[50%] max-[575px]:w-[120px] max-[575px]:h-[120px]">
                     <a
-                      href="javascript:void(0)"
+                      href="tel:+40786141849"
                       className="relative modal-trigger"
                       data-bs-toggle="modal"
                       data-bs-target="#bid"

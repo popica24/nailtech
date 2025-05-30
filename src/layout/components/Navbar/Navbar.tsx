@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { Link } from "react-router-dom";
+import ShoppingCart from "../../../components/ShoppingCart";
+import { useCart } from "../../../CartContext";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -22,6 +24,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
+  const { openCart, isCartOpen } = useCart();
   return (
     <>
       <header
@@ -41,6 +44,12 @@ const Navbar = () => {
                   />
                 </Link>
                 <div className="flex flex-row items-center">
+                  <li
+                    className="nav-item transition-all duration-[0.3s] ease-in-out flex me-6 items-center cursor-pointer text-4xl md:hidden"
+                    onClick={openCart}
+                  >
+                    <i className="fa-solid fa-bag-shopping"></i>
+                  </li>
                   <button
                     onClick={toggleMenu}
                     className="navbar-toggler min-[992px]:hidden w-[40px] h-[40px] flex items-center justify-center rounded-[50%] text-[#111a24] border-[1px] border-solid border-[#111a24] text-[1.25rem] bg-transparent"
@@ -103,13 +112,19 @@ const Navbar = () => {
                         Galerie Foto
                       </Link>
                     </li>
-                    <li className="nav-item transition-all duration-[0.3s] ease-in-out mx-[30px]">
+                    <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <a
                         href="/#despre-mine"
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
                       >
                         Despre Mine
                       </a>
+                    </li>
+                    <li
+                      className="nav-item transition-all duration-[0.3s] ease-in-out mx-[30px] flex items-center cursor-pointer"
+                      onClick={openCart}
+                    >
+                      <i className="fa-solid fa-bag-shopping"></i>
                     </li>
                   </ul>
                 </div>
@@ -120,6 +135,7 @@ const Navbar = () => {
       </header>
       {isMenuOpen && <></>}
       <MobileMenu closeMenu={closeMenu} visible={isMenuOpen} />
+      {isCartOpen && <ShoppingCart />}
     </>
   );
 };

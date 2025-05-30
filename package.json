@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",
+    "axios": "^1.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.1",
@@ -18,6 +19,7 @@
     "slick-carousel": "^1.8.1",
     "sweetalert2": "^11.19.1",
     "tailwindcss": "^4.0.14",
+    "toastify": "^2.0.1",
     "yet-another-react-lightbox": "^3.22.0"
   },
   "devDependencies": {

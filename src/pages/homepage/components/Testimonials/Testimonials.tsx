@@ -8,27 +8,27 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Persoana 1",
+      name: "Alexandra",
       role: "Cursant 2023-2024",
       image: "Testimonials/Reviewers/1.jpg",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut quaerat maiores blanditiis.",
+        "În doar 5 zile de curs am plecat cu un bagaj mare de informații. Au fost multe informații de asimilat, însă atunci când îți dorești cu adevărat, reuşeşti tot ce îți propui. Mulțumim pentru răbdarea acordata. Sper sa ne revedem la cursul de perfecționare!",
     },
     {
       id: 2,
-      name: "Persoana 2",
+      name: "Ana",
       role: "Cursant 2023-2024",
       image: "Testimonials/Reviewers/2.jpg",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut quaerat maiores blanditiis.",
+        "Cursul m-a surprins plăcut prin calitatea şi profesionalismul oferit. Atmosfera a fost una prietenoasă si relaxanta, unde mi-a plăcut in mod special faptul că puteam pune intrebari oricând aveam o nelămurire. Am apreciat în mod special modul în care ne-au fost prezentate noile tehnici folosite in industrie si faptul că ne-au fost puse la dispoziție toate materialele de care am avut nevoie. Practica a fost intensă și bine ghidată, ceea ce mi-a oferit încrederea necesară pentru a începe să lucrez pe cont propriu. Este un curs pe care îl recomand cu căldură oricui doreşte să-şi construiască o carieră în acest domeniu sau să-și perfecționeze abilitățile.",
     },
     {
       id: 3,
-      name: "Persoana 3",
+      name: "Roxana",
       role: "Cursant 2023-2024",
       image: "Testimonials/Reviewers/3.jpg",
       testimonial:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto at sint eligendi possimus perspiciatis asperiores reiciendis hic amet alias aut quaerat maiores blanditiis.",
+        "În primul rând țin să ți mulțumesc! Eşti foarte răbdătoare, calmă, explici foarte bine toți pași, nu eşti grăbită, de aia am și ales să revin din nou la cursul tău. Nu aveam nici o idee despre tehnica pe care am învăţat-o ieri. Informațiile de ieri m-au ajuta în a- mi vedea mai bine greșelile, să fiu mai atentă la cuticula, la cantitatea de material care trebuie plinuță, la subţierea pereţilor lateralii. Eu consider și cred ca pe mine cursul care l-am facut ieri cu tine ma va ajuta foarte mult. Mulțumesc!",
     },
   ];
 

@@ -35,7 +35,6 @@ const Courses = () => {
               id="MixItUp51F797"
             >
               <div className="flex flex-wrap w-full mb-[-24px]">
-                {/* Courses Here */}
                 <Product
                   url={"/cursuri/curs-individual"}
                   categoriesClasses={"slim"}
@@ -57,7 +56,7 @@ const Courses = () => {
                 <Product
                   url={"/cursuri/curs-slim"}
                   categoriesClasses={"base"}
-                  image={"Courses/baza1.jpg"}
+                  image={"Courses/slim.jpg"}
                   name={"Cursul Slim"}
                   description={
                     "Nu este doar un nou trend – este o tehnică esențială, care pune accent pe eleganță, structură corectă și execuție impecabilă. Cursul SLIM te învață cum să construiești unghii subțiri, durabile și perfect echilibrate"
@@ -66,14 +65,12 @@ const Courses = () => {
                 <Product
                   url={"/cursuri/intretinere-si-estetica"}
                   categoriesClasses={"slim"}
-                  image={"Courses/product1.jpg"}
+                  image={"Courses/maintenance.jpg"}
                   name={"Intreținere cu precizie și estetică"}
                   description={
                     "Acest curs avansat se adresează tehnicienelor cu experiență care doresc să-și perfecționeze tehnica, să învețe metode eficiente de corecție și întreținere și să ofere servicii premium, aplicabile imediat în salon."
                   }
                 />
-
-                {/* Courses Here */}
               </div>
             </div>
           </div>

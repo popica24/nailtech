@@ -14,6 +14,7 @@ const MobileMenu = (props: Props) => {
           props.visible ? "" : "hidden"
         } w-full h-screen fixed top-[0] left-[0] bg-[#000000cc] z-[42]`}
       ></div>
+
       <div
         id="in_mobile_menu"
         className={`bix-side-cart bix-mobile-menu transition-all duration-[0.3s] ease-in-out w-[300px] h-full pt-[15px] px-[20px] pb-[20px] fixed top-[0] right-auto left-[0] bg-[#fff] ${
