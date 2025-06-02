@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Courses = () => {
   return (
     <section
@@ -106,36 +108,36 @@ const Product = ({
     >
       <div className="bix-project-card">
         <div className="project-image relative px-[30px] pb-[30px] overflow-hidden rounded-[30px] z-[1] max-[480px]:px-[20px] max-[480px]:pb-[20px]">
-          <a href={url} className="flex rounded-[30px] overflow-hidden">
+          <Link to={url} className="flex rounded-[30px] overflow-hidden">
             <div className="overlay-project-card transition-all duration-[0.3s] ease-in-out opacity-[0] w-[calc(100%-60px)] h-[calc(100%-30px)] absolute top-[0] right-[30px] rounded-[30px] flex items-center justify-center bg-[#00000080] z-[45] overflow-hidden max-[480px]:p-[0] max-[480px]:w-[calc(100%-40px)] max-[480px]:h-[calc(100%-20px)] max-[480px]:top-[0] max-[480px]:bottom-[0] max-[480px]:right-[20px] max-[480px]:left-[20px]"></div>
             <img
               src={image}
               alt={name}
               className="transition-all duration-[0.3s] ease-in-out w-full aspect-square"
             />
-          </a>
+          </Link>
         </div>
         <div className="project-contact pt-[170px] pb-[30px] px-[30px] mt-[-175px] relative z-[0] border-[1px] border-solid border-[#1b1c20] rounded-[30px] max-[480px]:pb-[20px] max-[480px]:px-[20px]">
           <h5 className="mb-[2px] text-[18px] text-[#111a24] tracking-[0.03rem] leading-[1.2] font-medium">
-            <a
-              href={url}
+            <Link
+              to={url}
               className="transition-all duration-[0.3s] ease-in-out montserrat-300 leading-[26px] tracking-[0.03rem] text-[18px] max-[1399px]:text-[17px] font-semibold text-[#111a24] hover:text-[#f41a4a]"
             >
               {name}
-            </a>
+            </Link>
           </h5>
 
           <p className="mt-[4px] montserrat-300 text-[14px] font-normal tracking-[0.03rem] leading-[22px] text-[#495461]">
             {description}
           </p>
           <div className="flex md:justify-end md:items-end w-full text-center">
-            <a
-              href={url}
+            <Link
+              to={url}
               type="button"
               className="w-full cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
             >
               Inscrie-te si tu !
-            </a>
+            </Link>
           </div>
         </div>
       </div>

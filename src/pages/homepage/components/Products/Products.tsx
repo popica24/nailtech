@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Products = () => {
   return (
     <>
@@ -75,19 +77,19 @@ const Product = ({ image, name, link }: ProductProps) => {
     >
       <div className="bix-project-card">
         <div className="project-image relative px-[30px] pb-[30px] overflow-hidden rounded-[30px] z-[1] max-[480px]:px-[20px] max-[480px]:pb-[20px]">
-          <a href={link} className="flex rounded-[30px] overflow-hidden">
+          <Link to={link} className="flex rounded-[30px] overflow-hidden">
             <div className="overlay-project-card transition-all duration-[0.3s] ease-in-out opacity-[0] w-[calc(100%-60px)] h-[calc(100%-30px)] absolute top-[0] right-[30px] rounded-[30px] flex items-center justify-center bg-[#00000080] z-[45] overflow-hidden max-[480px]:p-[0] max-[480px]:w-[calc(100%-40px)] max-[480px]:h-[calc(100%-20px)] max-[480px]:top-[0] max-[480px]:bottom-[0] max-[480px]:right-[20px] max-[480px]:left-[20px]"></div>
             <img
               src={image}
               alt={name}
               className="transition-all duration-[0.3s] ease-in-out w-full aspect-square"
             />
-          </a>
+          </Link>
         </div>
         <div className="project-contact pt-[170px] pb-[30px] px-[30px] mt-[-175px] relative z-[0] border-[1px] border-solid border-[#1b1c20] rounded-[30px] max-[480px]:pb-[20px] max-[480px]:px-[20px]">
           <div className="flex md:justify-end md:items-end w-full text-center">
-            <a
-              href={link}
+            <Link
+              to={link}
               type="button"
               className="w-full inline-flex items-center cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
             >
@@ -115,7 +117,7 @@ const Product = ({ image, name, link }: ProductProps) => {
                   ></path>
                 </g>
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
