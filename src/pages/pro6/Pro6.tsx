@@ -85,13 +85,14 @@ const Pro6 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Pusher Pro 6
+                Pusher Pro 6 by Florina Scîntei – Instrumentul profesional de
+                referință
               </h1>
             </div>
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Pro6 information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">--.-- RON</p>
+              <p className="text-3xl tracking-tight text-gray-900">39.00 RON</p>
 
               <button
                 onClick={handleAddToCart}
@@ -108,11 +109,18 @@ const Pro6 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus magni ratione suscipit voluptatibus nesciunt
-                    accusantium ullam, eum facere, quidem quos sit error
-                    molestias consectetur. Voluptate aliquid corrupti eius
-                    quisquam optio!
+                    Pusher-ul Pro 6 este conceput pentru profesioniști care
+                    caută precizie și control maxim. Cu două capete specializate
+                    – toporaș triunghiular pentru curățarea plăcii unghiale și
+                    cap rotunjit pentru împingerea cuticulei – acest instrument
+                    versatil asigură rezultate impecabile. Confecționat din oțel
+                    inoxidabil superior cu ascuțire manuală profesională, oferă
+                    durabilitate excepțională și rezistență la sterilizare.
+                    Mânerul ergonomic antiderapant garantează aderență perfectă
+                    și confort chiar și în sesiuni intensive de lucru. Ideal
+                    pentru manichiură și pedichiură profesională – un instrument
+                    esențial pentru fiecare tehnician care valorează calitatea
+                    și eficiența în lucru.
                   </p>
                 </div>
               </div>

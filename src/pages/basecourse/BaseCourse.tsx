@@ -1,5 +1,453 @@
+import CourseContent from "../../components/CourseContent";
 import Footer from "../../layout/components/Footer";
+const dropdownSections = [
+  {
+    key: "descriere",
+    title: "Descriere",
+    content: (
+      <div className="space-y-4 overflow-y-scroll">
+        <p className="font-semibold">
+          Cursul de bază - nivel 1 nu este doar o simplă oportunitate de
+          învățare – este un pas spre realizarea visurilor tale!
+        </p>
+        <p>
+          Cu o structură bine gândită și informații valoroase, vei dobândi
+          abilități esențiale care îți vor transforma complet perspectiva și
+          cariera.
+        </p>
 
+        <h4 className="font-semibold mt-6 mb-3">De ce să alegi acest curs?</h4>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <strong>Cunoștințe valoroase</strong> – Dobândești informații care
+            te vor ajuta să crești în domeniul tău de interes
+          </li>
+          <li>
+            <strong>Suport constant</strong> – Voi fi alături de tine la fiecare
+            pas, ghidându-te să aplici ceea ce înveți în viața reală
+          </li>
+          <li>
+            <strong>Dezvoltare personală</strong> – Nu este doar despre
+            abilități tehnice, ci și despre încrederea în tine și curajul de
+            a-ți urma visurile
+          </li>
+        </ul>
+
+        <h4 className="font-semibold mt-6 mb-3">
+          Cui se adresează acest curs?
+        </h4>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <strong>Începători</strong> – persoane fără experiență anterioară,
+            care vor să pornească o carieră în domeniul manichiurii
+          </li>
+          <li>
+            <strong>Tehnicieni la început de drum</strong> – care își doresc să
+            învețe corect, de la zero, după cele mai noi metode din industrie
+          </li>
+          <li>
+            <strong>Profesioniști cu experiență</strong> – care vor să-și
+            actualizeze și consolideze cunoștințele de bază, pentru o tehnică
+            mai eficientă și precisă
+          </li>
+        </ul>
+
+        <div className="mt-6 p-4 bg-gray-50 rounded-lg">
+          <p className="text-sm italic">
+            Acesta nu este doar un curs, este o investiție în tine, în viitorul
+            tău și în succesul tău pe termen lung!
+          </p>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "program",
+    title: "Programa de curs",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-blue-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-blue-800 mb-2">
+            5 zile intensive | Tehnică fără pilire
+          </h4>
+          <p className="text-sm text-blue-700">
+            Program de desfășurare: 10:00 – 17:00 / 18:00 / 19:00
+          </p>
+          <p className="text-sm text-blue-700">
+            Organizare practică: Se va lucra 1 model la 2 cursante, respectiv
+            fiecare cursantă va lucra o mână pe zi
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="border-l-4 border-purple-500 pl-4">
+            <h5 className="font-semibold text-purple-700">ZIUA 1</h5>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Aplicarea bazei Rubber Base cu Apex pe unghia naturală</li>
+              <li>Tehnica fără pilire, cu rezistență de până la 4 săptămâni</li>
+              <li className="italic">
+                * fiecare cursantă lucrează pe propria mână
+              </li>
+            </ul>
+          </div>
+
+          <div className="border-l-4 border-purple-500 pl-4">
+            <h5 className="font-semibold text-purple-700">ZIUA 2</h5>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Construcție pe șablon – formă pătrat natural</li>
+              <li>Tehnica fără pilire aplicată în construcție</li>
+            </ul>
+          </div>
+
+          <div className="border-l-4 border-purple-500 pl-4">
+            <h5 className="font-semibold text-purple-700">ZIUA 3</h5>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Construcție pe șablon – formă oval clasic</li>
+              <li>Perfecționarea formei și a proporțiilor</li>
+            </ul>
+          </div>
+
+          <div className="border-l-4 border-purple-500 pl-4">
+            <h5 className="font-semibold text-purple-700">ZIUA 4</h5>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Întreținere cu tipsuri reutilizabile</li>
+              <li>Realizarea formei oval slim și tehnica Babyboomer</li>
+            </ul>
+          </div>
+
+          <div className="border-l-4 border-purple-500 pl-4">
+            <h5 className="font-semibold text-purple-700">ZIUA 5</h5>
+            <ul className="list-disc list-inside space-y-1 text-sm mt-2">
+              <li>Întreținere cu schimbarea arhitecturii</li>
+              <li>
+                Aplicarea unui design la alegere, în funcție de stilul cursantei
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "temele",
+    title: "Temele de curs",
+    content: (
+      <div className="space-y-6">
+        <p className="font-semibold">
+          Pe parcursul celor 5 zile, vei dobândi cunoștințe teoretice și
+          practice esențiale, structurate clar, pentru o bază solidă în cariera
+          ta de tehnician unghii:
+        </p>
+
+        <div className="space-y-5">
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              1. Organizarea și igiena spațiului de lucru
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Amenajarea corectă a spațiului</li>
+              <li>Norme de igienă, dezinfectare și sterilizare</li>
+              <li>Instrumentar metalic și nemetalic</li>
+              <li>Clasificarea biturilor, pilelor și bufferelor</li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              2. Cunoașterea materialelor și echipamentelor
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Aparatura electronică și modul de utilizare</li>
+              <li>Materiale tehnice: tipuri, clasificare și alegere corectă</li>
+              <li>Sisteme de gel și procesul de polimerizare</li>
+              <li>Cauzele exfolierii și cum obținem aderență optimă</li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              3. Anatomie și stilizare
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Anatomia și fiziologia degetului</li>
+              <li>Tipuri de cuticulă și metode de stilizare</li>
+              <li>Faldurile laterale: stilizare și tipologii</li>
+              <li>Patul unghial: recunoaștere și adaptare tehnică</li>
+              <li>Curbura C, axele unghiei, puncte de reper</li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              4. Tehnici de construcție și întreținere
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>
+                Aplicarea bazei rubber / gel autonivelant în tehnica fără pilire
+              </li>
+              <li>Tipuri de apex și importanța acestuia</li>
+              <li>Aplicarea culorii perfect sub cuticulă</li>
+              <li>Tehnici de pilire corectă și remodelare</li>
+              <li>Corecția unghiilor cu tendință de creștere în jos</li>
+              <li>Zona de stres și durabilitatea construcției</li>
+              <li>Măsurarea unghiilor pentru un rezultat armonios</li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              5. Tehnici avansate și design
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Tehnica babyboomer și french</li>
+              <li>
+                Construcții cu șabloane – adaptarea decupajului la forma patului
+                unghial
+              </li>
+              <li>Tipsuri reutilizabile – utilizare corectă și eficientă</li>
+              <li>
+                Întreținere cu schimbare de arhitectură și design personalizat
+              </li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              6. Elemente de business și promovare
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>Noțiuni de promovare în mediul online</li>
+              <li>Tipologii de clienți și gestionarea situațiilor dificile</li>
+              <li>Cum să realizezi și să editezi fotografii de portofoliu</li>
+              <li>Lista completă de produse necesare pentru început</li>
+            </ul>
+          </div>
+
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-indigo-700 mb-3">
+              7. Psihologie, branding personal și promovare
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm">
+              <li>
+                Psihologia clientului – cum creezi o experiență plăcută și
+                fidelizezi clientele
+              </li>
+              <li>
+                Formarea listei de prețuri – cum îți calculezi corect munca și
+                valoarea
+              </li>
+              <li>
+                Promovare în Social Media – strategii eficiente de conținut,
+                postare și creștere organică
+              </li>
+              <li>
+                Fotografii Instagramabile – cum realizezi imagini care vând
+              </li>
+              <li>Tehnici de fotografiere și cadre ideale</li>
+              <li>Instrumente de editare</li>
+              <li>Cum arată un portofoliu profesional și convingător</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "beneficii",
+    title: "Beneficii curs",
+    content: (
+      <div className="space-y-4">
+        <div className="bg-green-50 p-4 rounded-lg">
+          <p className="font-semibold text-green-800 mb-2">
+            Ca să fii un tehnician bun, trebuie să ai o bază bună.
+          </p>
+          <p className="text-green-700 text-sm">
+            De aici începe totul – cu tehnici corecte, explicații clare și
+            practică reală. Pentru că succesul nu e întâmplător, ci se
+            construiește pas cu pas.
+          </p>
+        </div>
+
+        <p>
+          Cursul BAZĂ – Nivel 1 este creat pentru a-ți oferi exact acea
+          fundație: clară, detaliată și practică. Iată ce beneficii vei avea:
+        </p>
+
+        <ul className="list-disc list-inside space-y-3">
+          <li>
+            <strong>Înveți totul de la zero</strong>, fără să fie nevoie de
+            experiență anterioară
+          </li>
+          <li>
+            <strong>Material complet și detaliat</strong> – Nu vei primi doar
+            niște simple notițe, ci un material complet, construit din
+            experiență reală, cu explicații clare, exemple concrete și scheme
+            care te vor ajuta să înțelegi cu adevărat fiecare pas
+          </li>
+          <li>
+            <strong>Diplomă acreditată</strong> eliberată la cerere (autorizată
+            de Ministerul Muncii)
+          </li>
+          <li>
+            <strong>Coduri de reducere</strong> pentru achiziții de produse
+            profesionale de pe site-uri partenere
+          </li>
+          <li>
+            <strong>Suport post-curs garantat</strong> – rămân alături de tine
+            pentru orice întrebare sau provocare, chiar și după finalizarea
+            cursului
+          </li>
+          <li>
+            <strong>Tehnici de salon aplicabile</strong> – Vei învăța toate
+            tehnicile de salon, aplicabile în viața reală și utile imediat
+          </li>
+          <li>
+            <strong>Secrete pentru rezultate impecabile</strong> – Descoperi
+            secretele unor rezultate impecabile și cum să le reproduci constant
+          </li>
+          <li>
+            <strong>Lucru profesionist</strong> – Înveți să lucrezi
+            profesionist, cu viziune, siguranță și eficiență
+          </li>
+          <li>
+            <strong>Toate informațiile esențiale</strong> pentru succesul tău în
+            acest domeniu
+          </li>
+        </ul>
+
+        <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400">
+          <h5 className="font-semibold text-yellow-800 mb-2">
+            Materiale necesare pentru curs
+          </h5>
+          <p className="text-sm text-yellow-700 mb-3">
+            Fiecare cursantă trebuie să aibă la ea:
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <h6 className="font-medium mb-2">Instrumente de bază:</h6>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Pusher (împingător cuticulă)</li>
+                <li>Forfecuță pentru cuticulă</li>
+              </ul>
+            </div>
+
+            <div>
+              <h6 className="font-medium mb-2">Capete de freză:</h6>
+              <ul className="list-disc list-inside space-y-1">
+                <li>2 capete diamantate (granulație roșie)</li>
+                <li>3 capete extradure (carbid)</li>
+              </ul>
+            </div>
+
+            <div className="md:col-span-2">
+              <h6 className="font-medium mb-2">Pensule pentru gel:</h6>
+              <ul className="list-disc list-inside space-y-1">
+                <li>Liner 5/0 (recomandat: Roubloff)</li>
+                <li>Pensulă pentru gel oval 4/6</li>
+                <li>Pensulă „limbă de pisică"</li>
+                <li>Pensulă pentru Acrygel</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-xs text-yellow-600 mt-3 italic">
+            * Dacă nu ai toate produsele, le poți achiziționa în prima zi,
+            direct de la școală.
+          </p>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "acte",
+    title: "Acte necesare diplomă acreditată",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-blue-50 p-4 rounded-lg">
+          <h5 className="font-semibold text-blue-800 mb-3">
+            Condiții obligatorii pentru înscriere:
+          </h5>
+          <ul className="list-disc list-inside space-y-2 text-blue-700">
+            <li>
+              <strong>Vârsta minimă:</strong> 18 ani împliniți
+            </li>
+            <li>
+              <strong>Studii:</strong> liceul finalizat (cu sau fără
+              Bacalaureat)
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 className="font-semibold mb-3">
+            Pentru eliberarea diplomei acreditate de către Ministerul Muncii,
+            este necesar să pregătești următoarele documente (în copie):
+          </h5>
+
+          <div className="space-y-3">
+            <div className="flex items-start space-x-3">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <strong>Cartea de identitate (CI)</strong>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <strong>Certificatul de naștere</strong>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <strong>Certificatul de căsătorie</strong> (dacă este cazul)
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <strong>Ultima diplomă de studii</strong> (minim liceul absolvit
+                – cu sau fără diplomă de Bacalaureat)
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-2 h-2 bg-indigo-500 rounded-full mt-2 flex-shrink-0"></div>
+              <div>
+                <strong>Adeverință medicală</strong> de la medicul de familie,
+                cu mențiunea: „Apt pentru curs"
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 p-4 rounded-lg">
+          <h6 className="font-medium text-gray-800 mb-2">
+            Ce punem noi la dispoziție:
+          </h6>
+          <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+            <li>
+              <strong>Aparatură profesională</strong> – echipamente moderne și
+              performante
+            </li>
+            <li>
+              <strong>Produse de lucru</strong> – materiale consumabile și
+              produse tehnice de calitate
+            </li>
+            <li>
+              <strong>Sprijin constant</strong> – suport tehnic și ghidare pas
+              cu pas în timpul exercițiilor
+            </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+];
 const BaseCourse = () => {
   return (
     <>
@@ -12,7 +460,7 @@ const BaseCourse = () => {
         >
           <div className="absolute inset-0 opacity-40">
             <img
-              src="/Courses/baza2.jpg"
+              src="/Courses/base-cover.jpg"
               alt="Background Image"
               className="object-cover object-center w-full h-full rounded-xl shadow-lg"
             />
@@ -38,207 +486,7 @@ const BaseCourse = () => {
           </div>
         </div>
 
-        <section
-          className="py-10 montserrat-400"
-          id="services"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="400"
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl text-[#C8A875] mb-8 pb-8 text-center montserrat-300">
-              Ce vei invata ?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="wheat flour grinding"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Introducere în Meseria de Tehnician de Unghii
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Înveți bazele meseriei: igiena, dezinfectarea
-                    instrumentelor, anatomia unghiei și noțiuni despre sănătatea
-                    mâinii. Discutăm despre responsabilitățile unui tehnician și
-                    cum să începi corect cariera în domeniu.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="Coffee"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Tehnica Corectă de Pregătire a Unghiei Naturale și Aplicare
-                    cu Gel
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Descoperi pașii esențiali pentru o construcție rezistentă:
-                    pregătirea corectă a plăcii unghiale, aplicarea șablonului,
-                    tehnica cu gel, formarea apexului și pilirea corectă. Totul
-                    explicat pas cu pas, clar și practic.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="Coffee"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Manichiura Semipermanentă – Teorie și Practică
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Înveți cum să realizezi o manichiură semipermanentă
-                    impecabilă, de la alegerea corectă a produselor, până la
-                    aplicare, sigilare și îndepărtare. Este baza pentru orice
-                    tehnician și un serviciu foarte căutat în saloane.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="text-gray-700 body-font mt-10 w-full mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="600"
-        >
-          <div className="flex justify-center text-3xl text-[#C8A875] text-center montserrat-300">
-            De ce cursurile mele ?
-          </div>
-          <div className="flex items-center flex-wrap text-center justify-center w-full mx-auto">
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <svg
-                    className="w-32 mb-3"
-                    fill="#C8A875"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 496 496"
-                    xmlSpace="preserve"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <g>
-                          <path d="M496,286.216c0-28.064-15.984-52.624-40-64.48V96c0-52.936-43.064-96-96-96c-52.936,0-96,43.064-96,96v9.456 c-10.12-1.728-20.64-1.912-31.216-0.272c-0.568,0.088-1.128,0.24-1.696,0.336C231.64,102.384,232,99.216,232,96V64 c0-12.656-9.84-23.056-22.28-23.936C193.544,15.232,165.712,0,136,0C87.48,0,48,39.48,48,88v8c0,18.28,9.128,35.352,24,45.768 v0.456c0,20.16,9.392,38.144,24,49.88v17.128L60.168,215.2C25.304,221,0,250.872,0,286.216V352h141.504 C114.264,362.696,96,388.848,96,418.912V496h304v-77.088c0-30.064-18.264-56.216-45.504-66.912H496V286.216z M280,96 c0-44.112,35.888-80,80-80s80,35.888,80,80v120.08c-1.384-0.312-2.752-0.648-4.168-0.888L400,209.224v-17.128 c14.608-11.744,24-29.72,24-49.88l-0.056-50.688L412.6,96.752C412.44,96.832,396.456,104,360,104s-52.44-7.168-52.536-7.208 L296,91.296v25.656c-5.08-2.936-10.456-5.344-16-7.312V96z M331.344,152.496c-5.2-9.128-11.784-17.12-19.344-23.896v-13.64 c9.512,2.392,25.2,5.04,48,5.04s38.488-2.648,48-5.04v27.256c0,26.472-21.528,48-48,48c-2.68,0-5.344-0.296-8-0.752V177.68 C352,165.24,343.112,154.848,331.344,152.496z M345.04,241.824C349.488,231.192,352,219.736,352,208v-2.36 c2.656,0.336,5.328,0.584,8,0.584c8.488,0,16.584-1.696,24-4.712v13.2l-24,72L345.04,241.824z M345.696,294.392l-21.912-21.912 c3.944-3.664,7.44-7.704,10.616-11.984L345.696,294.392z M397.432,225.008l12.64,2.104l5.24,26.256l-41.008,41.016 L397.432,225.008z M235.216,120.992c34.488-5.344,68.192,11.832,83.968,42.648l2.24,4.36h4.888c5.344,0,9.688,4.344,9.688,9.68 V208c0,16.512-5.824,32.448-16.008,45.136l-0.04-49.08l-11.056,4.568C308.72,208.704,290.552,216,248,216 s-60.72-7.296-60.848-7.352L176,203.872v30.696c-6.472-13.448-9.184-28.576-7.48-43.808 C172.44,155.688,200.488,126.352,235.216,120.992z M158.632,234.528c1.808,4.672,3.904,9.232,6.432,13.584l-14.112-8.472 L158.632,234.528z M136.28,230.2L112,212v-10.496c7.416,3.016,15.512,4.712,24,4.712c5.536,0,10.96-0.792,16.248-2.2 c0.216,4.864,0.736,9.688,1.672,14.424L136.28,230.2z M168.904,269.064l7.84,4.704c2.36,17.296,10.864,32.616,23.256,43.744V336 h-32.936l-6.76-54.04L168.904,269.064z M206.024,352.672l27.992,22.392l-23.592,14.16l-21.704-32.56L206.024,352.672z M216,340.152V328.4c9.656,4.816,20.496,7.6,32,7.6c11.504,0,22.344-2.776,32-7.6v11.752l-32,25.6L216,340.152z M289.976,352.664 l17.304,3.992l-21.704,32.56l-23.592-14.16L289.976,352.664z M248,320c-30.872,0-56-25.128-56-56v-37.328 c10.456,2.44,28.616,5.328,56,5.328c27.384,0,45.544-2.888,56-5.328V264C304,294.872,278.872,320,248,320z M72,91.296v28.584 c-5.088-6.808-8-15.16-8-23.88v-8c0-39.704,32.296-72,72-72c25.552,0,49.424,13.8,62.288,36.008L200.6,56h7.4c4.416,0,8,3.584,8,8 v32c0,5.016-1.008,9.904-2.88,14.608c-4.552,1.8-8.936,3.952-13.136,6.416l-0.032-25.488l-11.344,5.224 C188.44,96.832,172.456,104,136,104s-52.44-7.168-52.536-7.208L72,91.296z M88,142.216V114.96c9.512,2.392,25.2,5.04,48,5.04 s38.488-2.648,48-5.04v13.72c-16.6,14.984-28.04,35.616-31.08,58.368c-5.44,2.072-11.104,3.176-16.92,3.176 C109.528,190.216,88,168.688,88,142.216z M101.936,224.448l19.744,14.808l-22.936,13.768l-15.296-25.488L101.936,224.448z M104.936,336H64v-24H48v24H16v-49.784c0-27.496,19.68-50.728,46.792-55.24l3.696-0.616l26.768,44.616l9.84-5.904l8.592,12.888 L104.936,336z M121.056,336l7.24-57.96l-11.472-17.208L136,249.328l19.168,11.496l-11.472,17.208l7.24,57.968H121.056z M216.84,480H160v-40h-16v40h-32v-61.088c0-26.232,17.848-48.672,43.408-54.56l16.648-3.84l33.52,50.272l9.52-5.712l8.632,12.944 L216.84,480z M263.064,480h-30.12l7.336-66.016l-11.44-17.16L248,385.328l19.168,11.496l-11.44,17.16L263.064,480z M384,418.912 V480h-32v-40h-16v40h-56.84l-6.888-61.984l8.632-12.944l9.52,5.712l33.52-50.272l16.648,3.84 C366.152,370.24,384,392.68,384,418.912z M480,336h-32v-24h-16v24H296v-18.488c9.032-8.112,16-18.448,20.04-30.168L360,331.312 l72.688-72.68l-5.744-28.704l6.264,1.048c27.112,4.52,46.792,27.752,46.792,55.24V336z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Ghidaj & Sfaturi
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Preturi Rezonabile
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Rezultate Rapide
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Expertiza in Industrie
-                </h2>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="text-gray-700 body-font w-full"
-          id="gallery"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="800"
-        >
-          <div className="flex justify-center text-3xl montserrat-300 text-center py-10 text-[#C8A875]">
-            De la cursuri
-          </div>
-
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-          </div>
-        </section>
+        <CourseContent content={dropdownSections} price={"2400RON"} />
 
         <section
           className="bg-gray-100 w-full mx-auto"
@@ -259,7 +507,7 @@ const BaseCourse = () => {
             <div className="mt-8 lg:mt-20">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <div className="max-w-full mx-auto rounded-lg overflow-hidden">
+                  <div className="max-w-full mx-auto rounded-lg">
                     <div className="border-t border-gray-200 px-6 py-4">
                       <h3 className="text-lg text-gray-900">Contact</h3>
                       <p className="mt-1 text-gray-600">

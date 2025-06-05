@@ -85,13 +85,14 @@ const Pro5 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Pusher Pro 5
+                Pusher Pro 5 by Florina Scîntei – Instrumentul versatil pentru
+                prepararea perfectă a cuticulei
               </h1>
             </div>
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Pro5 information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">--.-- RON</p>
+              <p className="text-3xl tracking-tight text-gray-900">39.00 RON</p>
 
               <button
                 onClick={handleAddToCart}
@@ -108,11 +109,18 @@ const Pro5 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus magni ratione suscipit voluptatibus nesciunt
-                    accusantium ullam, eum facere, quidem quos sit error
-                    molestias consectetur. Voluptate aliquid corrupti eius
-                    quisquam optio!
+                    Pusher-ul Pro 5 combină funcționalitatea cu precizia
+                    profesională într-un singur instrument. Două capete
+                    specializate oferă soluții complete: capătul teșit metalic
+                    (tip bețișor de portocal) pentru ridicarea cuticulei lipite
+                    și capătul rotunjit curbat pentru îndepărtarea delicată fără
+                    zgârieturi. Confecționat din oțel inoxidabil superior cu
+                    ascuțire manuală profesională, garantează durabilitate și
+                    rezistență la sterilizare. Designul ergonomic asigură
+                    control precis și confort în utilizare. Ideal pentru
+                    manichiură și pedichiură profesională – instrumentul perfect
+                    pentru prepararea impecabilă a cuticulei, indiferent de
+                    nivelul de experiență al utilizatorului.
                   </p>
                 </div>
               </div>

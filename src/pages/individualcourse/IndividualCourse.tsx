@@ -1,4 +1,463 @@
+import CourseContent from "../../components/CourseContent";
 import Footer from "../../layout/components/Footer";
+
+const dropdownSections = [
+  {
+    key: "descriere",
+    title: "Descriere",
+    content: (
+      <div className="space-y-4">
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border-l-4 border-purple-500">
+          <h4 className="font-bold text-purple-800 text-lg mb-3">
+            Curs Individual VIP – Experiență personalizată, rezultate
+            excepționale
+          </h4>
+          <p className="text-purple-700">
+            Cursul Individual VIP este destinat tehnicienelor care își doresc
+            exclusivitate totală, flexibilitate și atenție 100% personalizată în
+            procesul de perfecționare.
+          </p>
+        </div>
+
+        <p>
+          Lucrezi direct cu trainerul, într-un mediu intim, fără alți
+          participanți, beneficiind de un program adaptat complet nevoilor tale.
+        </p>
+
+        <div className="bg-gold-50 p-4 rounded-lg border border-yellow-300">
+          <p className="text-yellow-800 font-medium text-center">
+            ✨ Investește în tine și oferă-ți șansa unei evoluții reale! ✨
+          </p>
+          <p className="text-yellow-700 text-sm text-center mt-2">
+            Alege un curs care îți respectă timpul, îți valorifică potențialul
+            și îți oferă o experiență premium.
+          </p>
+        </div>
+
+        <div className="text-center p-4 bg-gray-50 rounded-lg">
+          <p className="font-semibold text-lg text-gray-800">
+            Cursul Individual VIP este despre tine.{" "}
+            <span className="text-purple-600">Doar despre tine.</span>
+          </p>
+        </div>
+
+        <h4 className="font-semibold mt-6 mb-3">
+          Pentru cine este acest curs?
+        </h4>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            Tehnicienele care vor <strong>exclusivitate totală</strong> în
+            procesul de învățare
+          </li>
+          <li>
+            Profesioniștii cu <strong>program încărcat</strong> care au nevoie
+            de flexibilitate
+          </li>
+          <li>
+            Cei care vor să <strong>progreseze rapid</strong> și eficient
+          </li>
+          <li>
+            Tehnicienii care au <strong>provocări specifice</strong> sau tehnici
+            preferate
+          </li>
+          <li>
+            Persoanele care învață mai bine în <strong>mediu intim</strong>,
+            fără distrageri
+          </li>
+          <li>
+            Cei care vor <strong>rezultate premium</strong> și atenție
+            individualizată
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    key: "caracteristici",
+    title: "Caracteristici exclusive",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-purple-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-purple-800 mb-3">
+            Ce îți oferă acest curs exclusivist:
+          </h4>
+        </div>
+
+        <div className="space-y-4">
+          <div className="flex items-start space-x-4 p-4 bg-white border border-purple-200 rounded-lg shadow-sm">
+            <div className="text-purple-500 text-2xl">👑</div>
+            <div>
+              <h5 className="font-semibold text-purple-700 mb-1">
+                Exclusivitate totală
+              </h5>
+              <p className="text-sm text-gray-700">
+                Trainerul lucrează doar cu tine, fără alte cursante
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4 p-4 bg-white border border-blue-200 rounded-lg shadow-sm">
+            <div className="text-blue-500 text-2xl">📅</div>
+            <div>
+              <h5 className="font-semibold text-blue-700 mb-1">
+                Program flexibil
+              </h5>
+              <p className="text-sm text-gray-700">
+                Stabilim împreună datele și orele, în funcție de
+                disponibilitatea ta
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4 p-4 bg-white border border-green-200 rounded-lg shadow-sm">
+            <div className="text-green-500 text-2xl">⚡</div>
+            <div>
+              <h5 className="font-semibold text-green-700 mb-1">
+                Lucru intensiv
+              </h5>
+              <p className="text-sm text-gray-700">
+                Maximizezi practica și progresezi rapid
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4 p-4 bg-white border border-orange-200 rounded-lg shadow-sm">
+            <div className="text-orange-500 text-2xl">💬</div>
+            <div>
+              <h5 className="font-semibold text-orange-700 mb-1">
+                Feedback personalizat
+              </h5>
+              <p className="text-sm text-gray-700">
+                Corectări și îndrumări constante, adaptate stilului tău
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4 p-4 bg-white border border-pink-200 rounded-lg shadow-sm">
+            <div className="text-pink-500 text-2xl">🎯</div>
+            <div>
+              <h5 className="font-semibold text-pink-700 mb-1">
+                Structură personalizată
+              </h5>
+              <p className="text-sm text-gray-700">
+                Conținutul este conceput în funcție de nivelul și obiectivele
+                tale
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-4 p-4 bg-white border border-yellow-200 rounded-lg shadow-sm">
+            <div className="text-yellow-500 text-2xl">🌟</div>
+            <div>
+              <h5 className="font-semibold text-yellow-700 mb-1">
+                Rezultate rapide și de calitate
+              </h5>
+              <p className="text-sm text-gray-700">
+                Atenția individuală înseamnă progres vizibil încă din primele
+                ore
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "beneficii",
+    title: "Beneficii VIP",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-gradient-to-r from-gold-50 to-yellow-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-yellow-800 mb-2">
+            Beneficiile cursului Individual VIP:
+          </h4>
+          <p className="text-yellow-700 text-sm">
+            7 avantaje majore care fac diferența în procesul tău de învățare
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="border-l-4 border-purple-500 pl-6 py-3 bg-purple-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                1
+              </span>
+              <h5 className="font-semibold text-purple-800">
+                Atenție 100% personalizată
+              </h5>
+            </div>
+            <p className="text-sm text-purple-700">
+              Sesiunile sunt create special pentru tine, în funcție de
+              cunoștințele și obiectivele tale.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-blue-500 pl-6 py-3 bg-blue-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                2
+              </span>
+              <h5 className="font-semibold text-blue-800">
+                Ritmul tău, progresul tău
+              </h5>
+            </div>
+            <p className="text-sm text-blue-700">
+              Înveți fără presiune, în propriul ritm, pentru rezultate durabile.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-green-500 pl-6 py-3 bg-green-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                3
+              </span>
+              <h5 className="font-semibold text-green-800">
+                Corectarea imediată a greșelilor
+              </h5>
+            </div>
+            <p className="text-sm text-green-700">
+              Trainerul observă și corectează fiecare detaliu, crescând
+              eficiența învățării.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-orange-500 pl-6 py-3 bg-orange-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                4
+              </span>
+              <h5 className="font-semibold text-orange-800">
+                Focus pe ceea ce contează pentru tine
+              </h5>
+            </div>
+            <p className="text-sm text-orange-700">
+              Ai o tehnică preferată sau o provocare? Ne concentrăm exact pe ce
+              ai nevoie.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-pink-500 pl-6 py-3 bg-pink-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-pink-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                5
+              </span>
+              <h5 className="font-semibold text-pink-800">
+                Încredere în tine de la primele încercări
+              </h5>
+            </div>
+            <p className="text-sm text-pink-700">
+              Feedback-ul constant și susținerea trainerului îți oferă siguranță
+              în procesul de învățare.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-indigo-500 pl-6 py-3 bg-indigo-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-indigo-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                6
+              </span>
+              <h5 className="font-semibold text-indigo-800">
+                Flexibilitate maximă
+              </h5>
+            </div>
+            <p className="text-sm text-indigo-700">
+              Programul este adaptabil, astfel încât să se potrivească perfect
+              programului tău zilnic.
+            </p>
+          </div>
+
+          <div className="border-l-4 border-yellow-500 pl-6 py-3 bg-yellow-50">
+            <div className="flex items-center space-x-2 mb-2">
+              <span className="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                7
+              </span>
+              <h5 className="font-semibold text-yellow-800">
+                Rezultate premium, vizibile imediat
+              </h5>
+            </div>
+            <p className="text-sm text-yellow-700">
+              Progresezi rapid, iar lucrările tale vor reflecta imediat
+              calitatea noilor cunoștințe.
+            </p>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "program",
+    title: "Organizare și program",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-purple-50 p-4 rounded-lg">
+          <h4 className="font-semibold text-purple-800 mb-3">
+            Cum funcționează cursul Individual VIP?
+          </h4>
+          <p className="text-purple-700 text-sm">
+            Programul este complet flexibil și personalizat, conceput în jurul
+            nevoilor și obiectivelor tale specifice.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+              <span className="text-blue-500 mr-2">📋</span>
+              Planificare personalizată
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Evaluare inițială a nivelului curent</li>
+              <li>Stabilirea obiectivelor specifice</li>
+              <li>Crearea unui plan de învățare adaptat</li>
+              <li>Alegerea tehnicilor de focalizat</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+              <span className="text-green-500 mr-2">⏰</span>
+              Flexibilitate totală
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Tu alegi zilele și orele</li>
+              <li>Durată adaptabilă sesiunilor</li>
+              <li>Posibilitate de reprogramare</li>
+              <li>Pauze personalizate</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+              <span className="text-orange-500 mr-2">🎯</span>
+              Conținut personalizat
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Tehnici alese în funcție de nevoile tale</li>
+              <li>Accent pe provocările specifice</li>
+              <li>Materiale adaptate nivelului tău</li>
+              <li>Exerciții practice intensive</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border border-gray-200 rounded-lg p-4">
+            <h5 className="font-semibold text-gray-800 mb-3 flex items-center">
+              <span className="text-purple-500 mr-2">💎</span>
+              Experiență premium
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Mediu exclusiv și liniștit</li>
+              <li>Materiale și echipamente de top</li>
+              <li>Atenție completă din partea trainerului</li>
+              <li>Suport continuu post-curs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-purple-100 to-pink-100 p-4 rounded-lg">
+          <div className="flex items-center space-x-3">
+            <div className="text-purple-600 text-3xl">✨</div>
+            <div>
+              <h6 className="font-semibold text-purple-800 mb-1">
+                Experiența ta, regulile tale
+              </h6>
+              <p className="text-purple-700 text-sm">
+                În cursul Individual VIP, tu ești în centrul atenției. Fiecare
+                aspect al programului este gândit pentru a maximiza potențialul
+                tău și a-ți oferi cea mai bună experiență de învățare posibilă.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: "inscriere",
+    title: "Informații înscriere",
+    content: (
+      <div className="space-y-6">
+        <div className="bg-gold-50 border-l-4 border-yellow-500 p-4">
+          <h4 className="font-semibold text-yellow-800 mb-3">
+            🌟 Cursul Individual VIP - Investiția supremă în dezvoltarea ta
+          </h4>
+          <p className="text-yellow-700 text-sm">
+            Acest curs reprezintă vârful experienței educaționale în domeniul
+            nail art-ului, oferind o experiență completamente personalizată și
+            rezultate excepționale.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="bg-white border border-purple-200 rounded-lg p-4">
+            <h5 className="font-semibold text-purple-700 mb-3 flex items-center">
+              <span className="text-purple-500 mr-2">📞</span>
+              Cum te înscrii?
+            </h5>
+            <div className="space-y-2 text-sm text-gray-700">
+              <p>Pentru a te înscrie la cursul Individual VIP:</p>
+              <ul className="list-disc list-inside space-y-1 ml-4">
+                <li>Contactează-ne telefonic sau prin mesaj</li>
+                <li>Discutăm despre obiectivele și nevoile tale</li>
+                <li>Stabilim împreună programul perfect pentru tine</li>
+                <li>Confirmăm înscrierea și detaliile finale</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-white border border-blue-200 rounded-lg p-4">
+            <h5 className="font-semibold text-blue-700 mb-3 flex items-center">
+              <span className="text-blue-500 mr-2">⭐</span>
+              Ce include cursul?
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Atenție 100% individualizată din partea trainerului</li>
+              <li>Program complet flexibil și personalizat</li>
+              <li>Toate materialele și echipamentele necesare</li>
+              <li>Feedback constant și corectări immediate</li>
+              <li>Suport post-curs pentru întrebări și clarificări</li>
+              <li>Certificat de participare personalizat</li>
+            </ul>
+          </div>
+
+          <div className="bg-white border border-green-200 rounded-lg p-4">
+            <h5 className="font-semibold text-green-700 mb-3 flex items-center">
+              <span className="text-green-500 mr-2">🎓</span>
+              Pentru cine este recomandat?
+            </h5>
+            <ul className="list-disc list-inside space-y-1 text-sm text-gray-700">
+              <li>Tehnicienii cu experiență care vor să se perfecționeze</li>
+              <li>Începătorii care vor cele mai bune fundamente</li>
+              <li>
+                Persoanele cu program aglomerat care necesită flexibilitate
+              </li>
+              <li>
+                Cei care vor să învețe tehnici specifice rapid și eficient
+              </li>
+              <li>Profesiioniștii care caută experiențe premium de învățare</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg text-center">
+          <h5 className="font-bold text-purple-800 text-lg mb-2">
+            Pregătește-te pentru o transformare completă!
+          </h5>
+          <p className="text-purple-700 text-sm mb-4">
+            Cursul Individual VIP nu este doar despre învățarea unor tehnici -
+            este despre dezvoltarea ta completă ca profesionist în domeniul nail
+            art-ului.
+          </p>
+          <div className="bg-white bg-opacity-50 rounded-lg p-3">
+            <p className="text-purple-800 font-medium">
+              💎 Investiția în cursul VIP este investiția în excelența ta
+              profesională 💎
+            </p>
+          </div>
+        </div>
+      </div>
+    ),
+  },
+];
 
 const IndividualCourse = () => {
   return (
@@ -38,208 +497,7 @@ const IndividualCourse = () => {
           </div>
         </div>
 
-        <section
-          className="py-10 montserrat-400"
-          id="services"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="400"
-        >
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl text-[#C8A875] mb-8 pb-8 text-center montserrat-300">
-              Ce vei invata ?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="wheat flour grinding"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Tehnici Avansate de Construire și Apex Perfect
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Înveți să construiești unghii rezistente, cu forme
-                    impecabile, folosind tehnici moderne de creare a apexului
-                    pentru o arhitectură corectă și durabilă. Corectăm greșelile
-                    comune și adaptăm metodele în funcție de stilul tău de
-                    lucru.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="Coffee"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Design Personalizat și Artă pe Unghii
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Dezvoltă-ți creativitatea cu tehnici de nail art avansat,
-                    inclusiv pictură fină, efecte 3D, folie, marble și
-                    combinații cromatice în tendințe. Fiecare design este
-                    adaptat nevoilor tale și stilului pe care vrei să-l
-                    perfecționezi.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  src="/Courses/baza1.jpg"
-                  alt="Coffee"
-                  className="w-full h-64 object-cover"
-                />
-                <div className="p-6 text-start">
-                  <h3 className="text-xl font-medium text-gray-800 mb-2">
-                    Eficiență și Viteză în Lucru – Tehnici de Salon
-                  </h3>
-                  <p className="text-gray-700 text-base">
-                    Înveți cum să lucrezi rapid, curat și eficient, fără a
-                    compromite calitatea. Îți optimizezi pașii de lucru pentru a
-                    reduce timpul per client, crescând astfel numărul de
-                    programări și venitul lunar.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="text-gray-700 body-font mt-10 w-full mx-auto"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="600"
-        >
-          <div className="flex justify-center text-3xl text-[#C8A875] text-center montserrat-300">
-            De ce cursurile mele ?
-          </div>
-          <div className="flex items-center flex-wrap text-center justify-center w-full mx-auto">
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <svg
-                    className="w-32 mb-3"
-                    fill="#C8A875"
-                    version="1.1"
-                    id="Layer_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 496 496"
-                    xmlSpace="preserve"
-                  >
-                    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <g>
-                        <g>
-                          <path d="M496,286.216c0-28.064-15.984-52.624-40-64.48V96c0-52.936-43.064-96-96-96c-52.936,0-96,43.064-96,96v9.456 c-10.12-1.728-20.64-1.912-31.216-0.272c-0.568,0.088-1.128,0.24-1.696,0.336C231.64,102.384,232,99.216,232,96V64 c0-12.656-9.84-23.056-22.28-23.936C193.544,15.232,165.712,0,136,0C87.48,0,48,39.48,48,88v8c0,18.28,9.128,35.352,24,45.768 v0.456c0,20.16,9.392,38.144,24,49.88v17.128L60.168,215.2C25.304,221,0,250.872,0,286.216V352h141.504 C114.264,362.696,96,388.848,96,418.912V496h304v-77.088c0-30.064-18.264-56.216-45.504-66.912H496V286.216z M280,96 c0-44.112,35.888-80,80-80s80,35.888,80,80v120.08c-1.384-0.312-2.752-0.648-4.168-0.888L400,209.224v-17.128 c14.608-11.744,24-29.72,24-49.88l-0.056-50.688L412.6,96.752C412.44,96.832,396.456,104,360,104s-52.44-7.168-52.536-7.208 L296,91.296v25.656c-5.08-2.936-10.456-5.344-16-7.312V96z M331.344,152.496c-5.2-9.128-11.784-17.12-19.344-23.896v-13.64 c9.512,2.392,25.2,5.04,48,5.04s38.488-2.648,48-5.04v27.256c0,26.472-21.528,48-48,48c-2.68,0-5.344-0.296-8-0.752V177.68 C352,165.24,343.112,154.848,331.344,152.496z M345.04,241.824C349.488,231.192,352,219.736,352,208v-2.36 c2.656,0.336,5.328,0.584,8,0.584c8.488,0,16.584-1.696,24-4.712v13.2l-24,72L345.04,241.824z M345.696,294.392l-21.912-21.912 c3.944-3.664,7.44-7.704,10.616-11.984L345.696,294.392z M397.432,225.008l12.64,2.104l5.24,26.256l-41.008,41.016 L397.432,225.008z M235.216,120.992c34.488-5.344,68.192,11.832,83.968,42.648l2.24,4.36h4.888c5.344,0,9.688,4.344,9.688,9.68 V208c0,16.512-5.824,32.448-16.008,45.136l-0.04-49.08l-11.056,4.568C308.72,208.704,290.552,216,248,216 s-60.72-7.296-60.848-7.352L176,203.872v30.696c-6.472-13.448-9.184-28.576-7.48-43.808 C172.44,155.688,200.488,126.352,235.216,120.992z M158.632,234.528c1.808,4.672,3.904,9.232,6.432,13.584l-14.112-8.472 L158.632,234.528z M136.28,230.2L112,212v-10.496c7.416,3.016,15.512,4.712,24,4.712c5.536,0,10.96-0.792,16.248-2.2 c0.216,4.864,0.736,9.688,1.672,14.424L136.28,230.2z M168.904,269.064l7.84,4.704c2.36,17.296,10.864,32.616,23.256,43.744V336 h-32.936l-6.76-54.04L168.904,269.064z M206.024,352.672l27.992,22.392l-23.592,14.16l-21.704-32.56L206.024,352.672z M216,340.152V328.4c9.656,4.816,20.496,7.6,32,7.6c11.504,0,22.344-2.776,32-7.6v11.752l-32,25.6L216,340.152z M289.976,352.664 l17.304,3.992l-21.704,32.56l-23.592-14.16L289.976,352.664z M248,320c-30.872,0-56-25.128-56-56v-37.328 c10.456,2.44,28.616,5.328,56,5.328c27.384,0,45.544-2.888,56-5.328V264C304,294.872,278.872,320,248,320z M72,91.296v28.584 c-5.088-6.808-8-15.16-8-23.88v-8c0-39.704,32.296-72,72-72c25.552,0,49.424,13.8,62.288,36.008L200.6,56h7.4c4.416,0,8,3.584,8,8 v32c0,5.016-1.008,9.904-2.88,14.608c-4.552,1.8-8.936,3.952-13.136,6.416l-0.032-25.488l-11.344,5.224 C188.44,96.832,172.456,104,136,104s-52.44-7.168-52.536-7.208L72,91.296z M88,142.216V114.96c9.512,2.392,25.2,5.04,48,5.04 s38.488-2.648,48-5.04v13.72c-16.6,14.984-28.04,35.616-31.08,58.368c-5.44,2.072-11.104,3.176-16.92,3.176 C109.528,190.216,88,168.688,88,142.216z M101.936,224.448l19.744,14.808l-22.936,13.768l-15.296-25.488L101.936,224.448z M104.936,336H64v-24H48v24H16v-49.784c0-27.496,19.68-50.728,46.792-55.24l3.696-0.616l26.768,44.616l9.84-5.904l8.592,12.888 L104.936,336z M121.056,336l7.24-57.96l-11.472-17.208L136,249.328l19.168,11.496l-11.472,17.208l7.24,57.968H121.056z M216.84,480H160v-40h-16v40h-32v-61.088c0-26.232,17.848-48.672,43.408-54.56l16.648-3.84l33.52,50.272l9.52-5.712l8.632,12.944 L216.84,480z M263.064,480h-30.12l7.336-66.016l-11.44-17.16L248,385.328l19.168,11.496l-11.44,17.16L263.064,480z M384,418.912 V480h-32v-40h-16v40h-56.84l-6.888-61.984l8.632-12.944l9.52,5.712l33.52-50.272l16.648,3.84 C366.152,370.24,384,392.68,384,418.912z M480,336h-32v-24h-16v24H296v-18.488c9.032-8.112,16-18.448,20.04-30.168L360,331.312 l72.688-72.68l-5.744-28.704l6.264,1.048c27.112,4.52,46.792,27.752,46.792,55.24V336z"></path>
-                        </g>
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Ghidaj & Sfaturi
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image2.jdomni.in/banner/13062021/3E/57/E8/1D6E23DD7E12571705CAC761E7_1623567977295.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Preturi Rezonabile
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image3.jdomni.in/banner/13062021/16/7E/7E/5A9920439E52EF309F27B43EEB_1623568010437.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Rezultate Rapide
-                </h2>
-              </div>
-            </div>
-
-            <div className="p-4 md:w-1/4 sm:w-1/2">
-              <div className="px-4 py-6 transform transition duration-500 hover:scale-110">
-                <div className="flex justify-center">
-                  <img
-                    src="https://image3.jdomni.in/banner/13062021/EB/99/EE/8B46027500E987A5142ECC1CE1_1623567959360.png?output-format=webp"
-                    className="w-32 mb-3"
-                  />
-                </div>
-                <h2 className="title-font font-regular text-2xl text-gray-900">
-                  Expertiza in Industrie
-                </h2>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section
-          className="text-gray-700 body-font w-full"
-          id="gallery"
-          data-aos="fade-up"
-          data-aos-duration="2000"
-          data-aos-delay="800"
-        >
-          <div className="flex justify-center text-3xl montserrat-300 text-center py-10 text-[#C8A875]">
-            De la cursuri
-          </div>
-
-          <div className="grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-            <div className="group relative">
-              <img
-                src="/Courses/baza1.jpg"
-                alt="Image 1"
-                className="w-full h-80 object-cover rounded-lg transition-transform transform scale-100 group-hover:scale-105"
-              />
-            </div>
-          </div>
-        </section>
+        <CourseContent content={dropdownSections} price={"1400RON / ZI"} />
 
         <section
           className="bg-gray-100 w-full mx-auto"

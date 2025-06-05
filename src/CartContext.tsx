@@ -125,12 +125,10 @@ export function CartProvider({ children }: CartProviderProps) {
     setCart([]);
   };
 
-  // Calculate total price
   const getTotal = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
 
-  // Get total item count
   const getItemCount = () => {
     return cart.reduce((count, item) => count + item.quantity, 0);
   };
@@ -154,7 +152,6 @@ export function CartProvider({ children }: CartProviderProps) {
   );
 }
 
-// Custom hook to use the cart context
 export function useCart() {
   const context = useContext(CartContext);
   if (context === undefined) {
@@ -162,94 +159,3 @@ export function useCart() {
   }
   return context;
 }
-
-// Usage example:
-/*
-// 1. Wrap your app with CartProvider
-function App() {
-  return (
-    <CartProvider>
-      <Header />
-      <ProductList />
-      <CartDrawer />
-    </CartProvider>
-  );
-}
-
-// 2. Use the cart in any component
-function ProductCard({ product }) {
-  const { addToCart, openCart } = useCart();
-
-  const handleAddToCart = () => {
-    addToCart(product.id, product.name, product.price, 1);
-    openCart(); // Optionally open cart after adding
-  };
-
-  return (
-    <div>
-      <h3>{product.name}</h3>
-      <p>${product.price}</p>
-      <button onClick={handleAddToCart}>Add to Cart</button>
-    </div>
-  );
-}
-
-// 3. Cart component
-function CartDrawer() {
-  const { 
-    cart, 
-    isCartOpen, 
-    closeCart, 
-    removeFromCart, 
-    increaseQuantity, 
-    decreaseQuantity, 
-    getTotal, 
-    getItemCount 
-  } = useCart();
-
-  if (!isCartOpen) return null;
-
-  return (
-    <div className="cart-drawer">
-      <div className="cart-header">
-        <h2>Cart ({getItemCount()} items)</h2>
-        <button onClick={closeCart}>×</button>
-      </div>
-      
-      <div className="cart-items">
-        {cart.map(item => (
-          <div key={item.id} className="cart-item">
-            <h4>{item.name}</h4>
-            <p>${item.price}</p>
-            <div className="quantity-controls">
-              <button onClick={() => decreaseQuantity(item.id)}>-</button>
-              <span>{item.quantity}</span>
-              <button onClick={() => increaseQuantity(item.id)}>+</button>
-            </div>
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
-          </div>
-        ))}
-      </div>
-      
-      <div className="cart-footer">
-        <p>Total: ${getTotal().toFixed(2)}</p>
-        <button>Checkout</button>
-      </div>
-    </div>
-  );
-}
-
-// 4. Header with cart icon
-function Header() {
-  const { openCart, getItemCount } = useCart();
-
-  return (
-    <header>
-      <h1>My Store</h1>
-      <button onClick={openCart}>
-        Cart ({getItemCount()})
-      </button>
-    </header>
-  );
-}
-*/

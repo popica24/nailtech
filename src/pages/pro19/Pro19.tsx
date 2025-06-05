@@ -38,7 +38,7 @@ const Pro19 = () => {
               <li>
                 <div className="flex items-center">
                   <span className="mr-2 text-sm font-medium text-gray-900">
-                    Foarfecute
+                    Forfecute
                   </span>
                   <svg
                     width="16"
@@ -85,13 +85,16 @@ const Pro19 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Foarfecuta Pro 19
+                Forfecuță pentru cuticule PRO19 by Florina Scîntei – Excelenţă
+                japoneză în fiecare tăietură
               </h1>
             </div>
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Pro19 information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">--.-- RON</p>
+              <p className="text-3xl tracking-tight text-gray-900">
+                109.00 RON
+              </p>
 
               <button
                 onClick={handleAddToCart}
@@ -108,11 +111,18 @@ const Pro19 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus magni ratione suscipit voluptatibus nesciunt
-                    accusantium ullam, eum facere, quidem quos sit error
-                    molestias consectetur. Voluptate aliquid corrupti eius
-                    quisquam optio!
+                    Forfecuța PRO19 redefinește standardele de precizie cu lama
+                    de 20mm ascuțită manual din oțel inoxidabil japonez premium.
+                    Curbura perfectă a lamei asigură manevrare eficientă și
+                    tăieturi fine, iar mânerul ergonomic oferă control total și
+                    confort prelungit. Rezistentă la sterilizare și
+                    dezinfectare, menține performanța fără reascuțire frecventă.
+                    Design-ul profesional este potrivit atât tehnicienilor, cât
+                    și îngrijirii personale. Instrucțiuni simple de întreținere
+                    și lubrifiere post-sterilizare asigură durabilitate maximă.
+                    Un instrument de excepție pentru cei care valorează
+                    precizia, confortul și calitatea japoneză superioară în
+                    fiecare detaliu.
                   </p>
                 </div>
               </div>

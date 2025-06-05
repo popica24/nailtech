@@ -38,7 +38,7 @@ const Pro20 = () => {
               <li>
                 <div className="flex items-center">
                   <span className="mr-2 text-sm font-medium text-gray-900">
-                    Foarfecute
+                    Forfecute
                   </span>
                   <svg
                     width="16"
@@ -91,7 +91,9 @@ const Pro20 = () => {
 
             <div className="mt-4 lg:row-span-3 lg:mt-0">
               <h2 className="sr-only">Pro20 information</h2>
-              <p className="text-3xl tracking-tight text-gray-900">--.-- RON</p>
+              <p className="text-3xl tracking-tight text-gray-900">
+                109.00 RON
+              </p>
 
               <button
                 onClick={handleAddToCart}
@@ -108,11 +110,18 @@ const Pro20 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ducimus magni ratione suscipit voluptatibus nesciunt
-                    accusantium ullam, eum facere, quidem quos sit error
-                    molestias consectetur. Voluptate aliquid corrupti eius
-                    quisquam optio!
+                    Forfecuța PRO20 stabilește noi standarde de excelență prin
+                    lama de 20mm, ascuțită manual din oțel inoxidabil japonez de
+                    cea mai înaltă calitate. Forma curbată optimizată garantează
+                    precizie excepțională și control superior în fiecare
+                    mișcare. Mânerul ergonomic asigură confort maxim chiar și în
+                    sesiuni prelungite de lucru, iar construcția premium rezistă
+                    perfect la sterilizare repetată fără să-și piardă ascuțimea.
+                    Potrivită atât pentru profesioniști, cât și pentru
+                    îngrijirea personală acasă. Întreținerea simplă și
+                    lubrifierea periodică garantează performanțe constante pe
+                    termen lung. Instrumentul ideal pentru cei care nu acceptă
+                    compromisuri în materie de calitate și precizie.
                   </p>
                 </div>
               </div>
