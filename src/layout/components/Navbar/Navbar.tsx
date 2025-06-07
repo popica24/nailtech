@@ -3,10 +3,12 @@ import MobileMenu from "./MobileMenu";
 import { Link } from "react-router-dom";
 import ShoppingCart from "../../../components/ShoppingCart";
 import { useCart } from "../../../CartContext";
+import Lightbox from "yet-another-react-lightbox";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +29,27 @@ const Navbar = () => {
   const { openCart, isCartOpen } = useCart();
   return (
     <>
+      <Lightbox
+        open={galleryOpen}
+        close={() => setGalleryOpen(false)}
+        slides={[
+          {
+            src: "MyWork/1.jpg",
+          },
+          {
+            src: "MyWork/2.jpg",
+          },
+          {
+            src: "MyWork/3.jpg",
+          },
+          {
+            src: "MyWork/4.jpg",
+          },
+          {
+            src: "MyWork/5.jpg",
+          },
+        ]}
+      ></Lightbox>
       <header
         className={`transition-all duration-[0.3s] ease-in-out py-[30px] fixed top-[0] right-[0] left-[0] z-[20] ${
           isFixed ? "bix-fixed" : "bix-static"
@@ -105,12 +128,12 @@ const Navbar = () => {
                       </a>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                      <Link
-                        to="/galerie-foto"
-                        className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
+                      <span
+                        onClick={() => setGalleryOpen(true)}
+                        className="nav-link cursor-pointer transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
                       >
-                        Galerie Foto
-                      </Link>
+                        Lucrarile Mele
+                      </span>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <a
@@ -134,7 +157,11 @@ const Navbar = () => {
         </div>
       </header>
       {isMenuOpen && <></>}
-      <MobileMenu closeMenu={closeMenu} visible={isMenuOpen} />
+      <MobileMenu
+        closeMenu={closeMenu}
+        visible={isMenuOpen}
+        openGallery={() => setGalleryOpen(true)}
+      />
       {isCartOpen && <ShoppingCart />}
     </>
   );

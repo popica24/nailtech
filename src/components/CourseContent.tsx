@@ -1,13 +1,6 @@
-import { ReactNode, useState } from "react";
+import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-
-interface DropdownSection {
-  key: string;
-  title: string;
-  content: ReactNode;
-}
-
-type DropdownSections = DropdownSection[];
+import { DropdownSections, ExpandedSections } from "../types";
 
 type Props = {
   content: DropdownSections;
@@ -15,9 +8,11 @@ type Props = {
 };
 
 const CourseContent = (props: Props) => {
-  const [expandedSections, setExpandedSections] = useState({});
+  const [expandedSections, setExpandedSections] = useState<ExpandedSections>(
+    {}
+  );
 
-  const toggleSection = (sectionKey) => {
+  const toggleSection = (sectionKey: string) => {
     setExpandedSections((prev) => ({
       ...prev,
       [sectionKey]: !prev[sectionKey],

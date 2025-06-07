@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 type Props = {
   visible: boolean;
   closeMenu: () => void;
+  openGallery: () => void;
 };
 
 const MobileMenu = (props: Props) => {
@@ -79,12 +80,12 @@ const MobileMenu = (props: Props) => {
                 </Link>
               </li>
               <li className="nav-item relative">
-                <Link
-                  to={"/#galerie-foto"}
+                <span
+                  onClick={props.openGallery}
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
-                  Galerie Foto
-                </Link>
+                  Lucrarile Mele
+                </span>
               </li>
               <li className="nav-item relative">
                 <Link

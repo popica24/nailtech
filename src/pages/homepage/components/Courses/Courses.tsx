@@ -40,7 +40,7 @@ const Courses = () => {
                 <Product
                   url={"/cursuri/curs-individual"}
                   categoriesClasses={"slim"}
-                  image={"Courses/product1.jpg"}
+                  image={"Courses/base-cover.jpg"}
                   name={"Cursul Individual VIP"}
                   description={
                     "Cursul Individual VIP este destinat tehnicienelor care își doresc exclusivitate totală, flexibilitate și atenție 100% personalizată în procesul de perfecționare. Lucrezi direct cu trainerul, într-un mediu intim, fără alți participanți."

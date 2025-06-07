@@ -1,17 +1,6 @@
-import { useState } from "react";
-import WorkSection1 from "../../../../components/WorkSection1";
-import WorkSection2 from "../../../../components/WorkSection2";
-import WorkSection3 from "../../../../components/WorkSection3";
-
 const AboutMe = () => {
-  const [open1, setOpen1] = useState(false);
-  const [open2, setOpen2] = useState(false);
-  const [open3, setOpen3] = useState(false);
   return (
     <>
-      <WorkSection1 open={open1} setOpen={setOpen1} />
-      <WorkSection2 open={open2} setOpen={setOpen2} />
-      <WorkSection3 open={open3} setOpen={setOpen3} />
       <section
         id="despre-mine"
         className="section-about relative py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px] px-[12px] md:px-0"
