@@ -87,8 +87,7 @@ const Pro5 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Pusher Pro 5 by Florina Scîntei – Instrumentul versatil pentru
-                prepararea perfectă a cuticulei
+                Pusher Pro 5 – Precizie și adaptabilitate în lucru
               </h1>
             </div>
 
@@ -111,18 +110,24 @@ const Pro5 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Pusher-ul Pro 5 combină funcționalitatea cu precizia
-                    profesională într-un singur instrument. Două capete
-                    specializate oferă soluții complete: capătul teșit metalic
-                    (tip bețișor de portocal) pentru ridicarea cuticulei lipite
-                    și capătul rotunjit curbat pentru îndepărtarea delicată fără
-                    zgârieturi. Confecționat din oțel inoxidabil superior cu
-                    ascuțire manuală profesională, garantează durabilitate și
-                    rezistență la sterilizare. Designul ergonomic asigură
-                    control precis și confort în utilizare. Ideal pentru
-                    manichiură și pedichiură profesională – instrumentul perfect
-                    pentru prepararea impecabilă a cuticulei, indiferent de
-                    nivelul de experiență al utilizatorului.
+                    Pusher-ul Pro 5 este un instrument profesional, ideal pentru
+                    pregătirea cuticulei în manichiură și pedichiură. <br />
+                    Dispune de două capete de lucru special concepute:
+                    <br />{" "}
+                    <b>
+                      1. Capăt teșit și înclinat, sub formă de bețișor de
+                      portocal metalic
+                    </b>{" "}
+                    – perfect pentru ridicarea și împingerea cuticulei lipite de
+                    placa unghială.
+                    <br /> 2. <b>Capăt rotunjit, ușor curbat</b> – se potrivește
+                    perfect pe suprafața unghiei și permite îndepărtarea
+                    delicată a cuticulei, fără a zgâria placa unghială.
+                    <br /> Realizat din oțel inoxidabil de înaltă calitate,
+                    pusher-ul este rezistent la coroziune, sterilizare și
+                    soluții de dezinfectare. Ascuțirea manuală oferă o precizie
+                    excelentă și o experiență de lucru profesională, indiferent
+                    de nivelul de experiență al utilizatorului.
                   </p>
                 </div>
               </div>

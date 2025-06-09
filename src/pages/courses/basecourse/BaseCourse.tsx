@@ -17,7 +17,7 @@ const dropdownSections = [
         </p>
 
         <h4 className="font-semibold mt-6 mb-3">De ce să alegi acest curs?</h4>
-        <ul className="list-disc list-inside space-y-2">
+        <ul className="list-disc list-inside space-y-2 text-[#333]">
           <li>
             <strong>Cunoștințe valoroase</strong> – Dobândești informații care
             te vor ajuta să crești în domeniul tău de interes

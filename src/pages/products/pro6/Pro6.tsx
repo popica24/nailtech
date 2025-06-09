@@ -87,8 +87,8 @@ const Pro6 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Pusher Pro 6 by Florina Scîntei – Instrumentul profesional de
-                referință
+                Pusher Pro 6 by Florina Scîntei – Control, Precizie și
+                Versatilitate
               </h1>
             </div>
 
@@ -111,18 +111,20 @@ const Pro6 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Pusher-ul Pro 6 este conceput pentru profesioniști care
-                    caută precizie și control maxim. Cu două capete specializate
-                    – toporaș triunghiular pentru curățarea plăcii unghiale și
-                    cap rotunjit pentru împingerea cuticulei – acest instrument
-                    versatil asigură rezultate impecabile. Confecționat din oțel
-                    inoxidabil superior cu ascuțire manuală profesională, oferă
-                    durabilitate excepțională și rezistență la sterilizare.
-                    Mânerul ergonomic antiderapant garantează aderență perfectă
-                    și confort chiar și în sesiuni intensive de lucru. Ideal
-                    pentru manichiură și pedichiură profesională – un instrument
-                    esențial pentru fiecare tehnician care valorează calitatea
-                    și eficiența în lucru.
+                    Pusher-ul Pro 6 este un instrument profesional cu două
+                    capete, conceput special pentru îngrijirea eficientă a
+                    cuticulei. Un capăt este destinat ridicării și împingerii
+                    cuticulei, iar celălalt este ideal pentru curățarea delicată
+                    a plăcii unghiale, fără a provoca zgârieturi sau disconfort.
+                    Ascuțirea manuală profesională asigură o eficiență maximă în
+                    timpul lucrului, iar mânerul ergonomic, cu suprafață
+                    antiderapantă, oferă stabilitate și confort în utilizare –
+                    chiar și în condiții de lucru intens. Realizat din oțel
+                    inoxidabil de înaltă calitate, pusher-ul este rezistent la
+                    dezinfectare și sterilizare, fiind potrivit atât pentru
+                    manichiură, cât și pentru pedichiură. Un instrument esențial
+                    în trusa fiecărui profesionist – pentru un rezultat curat,
+                    sigur și impecabil.
                   </p>
                 </div>
               </div>

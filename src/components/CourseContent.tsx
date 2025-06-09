@@ -75,6 +75,72 @@ const CourseContent = (props: Props) => {
           </div>
         </div>
       </div>
+      <div className="space-y-6">
+        <div className="bg-red-50 border-l-4 border-red-400 p-4">
+          <h5 className="font-semibold text-red-800 mb-3">
+            ⚠️ Informații importante despre plată și participare
+          </h5>
+          <p className="text-red-700 text-sm mb-3">
+            Vă rugăm să citiți cu atenție următoarele condiții înainte de
+            înscriere:
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          <div className="border border-gray-200 rounded-lg p-4">
+            <h6 className="font-semibold text-gray-800 mb-3">
+              Politica de rambursare:
+            </h6>
+            <ul className="list-disc list-inside space-y-2 text-sm text-gray-700">
+              <li>
+                <strong>Plata efectuată nu este returnabilă</strong> în cazul în
+                care nu vă prezentați la curs
+              </li>
+              <li>
+                <strong>În cazul anulării participării</strong>, avansul se
+                pierde și nu va fi luat în considerare pentru o altă sesiune a
+                cursului
+              </li>
+              <li>
+                <strong>Prețul este nenegociabil și nerambursabil</strong>,
+                indiferent de motivul neparticipării
+              </li>
+              <li>
+                <strong>Dacă cursantul este nemulțumit</strong> de anumite
+                aspecte ale cursului, nu se acceptă returnarea sumei achitate,
+                întrucât programa completă este prezentată înaintea înscrierii
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+          <div className="flex items-start space-x-3">
+            <div className="text-amber-500 text-xl">⚠️</div>
+            <div>
+              <h6 className="font-semibold text-amber-800 mb-2">
+                Condiție de participare:
+              </h6>
+              <p className="text-amber-700 text-sm">
+                Vă rugăm să vă înscrieți doar dacă sunteți{" "}
+                <strong>100% siguri de participare</strong> și ați luat la
+                cunoștință toate informațiile oferite anterior.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-blue-50 p-4 rounded-lg">
+          <h6 className="font-semibold text-blue-800 mb-2">
+            De ce aceste condiții?
+          </h6>
+          <p className="text-blue-700 text-sm">
+            Aceste măsuri sunt necesare pentru a menține calitatea cursurilor și
+            pentru a ne asigura că locurile sunt ocupate de persoane cu adevărat
+            interesate de dezvoltarea profesională în acest domeniu.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

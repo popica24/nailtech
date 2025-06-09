@@ -87,8 +87,8 @@ const Pro19 = () => {
           >
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
               <h1 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl montserrat-400">
-                Forfecuță pentru cuticule PRO19 by Florina Scîntei – Excelenţă
-                japoneză în fiecare tăietură
+                Forfecuță pentru cuticule PRO19 by Florina Scîntei – Precizie,
+                Finețe, Control
               </h1>
             </div>
 
@@ -113,18 +113,29 @@ const Pro19 = () => {
 
                 <div className="space-y-6">
                   <p className="text-base text-gray-900">
-                    Forfecuța PRO19 redefinește standardele de precizie cu lama
-                    de 20mm ascuțită manual din oțel inoxidabil japonez premium.
-                    Curbura perfectă a lamei asigură manevrare eficientă și
-                    tăieturi fine, iar mânerul ergonomic oferă control total și
-                    confort prelungit. Rezistentă la sterilizare și
-                    dezinfectare, menține performanța fără reascuțire frecventă.
-                    Design-ul profesional este potrivit atât tehnicienilor, cât
-                    și îngrijirii personale. Instrucțiuni simple de întreținere
-                    și lubrifiere post-sterilizare asigură durabilitate maximă.
-                    Un instrument de excepție pentru cei care valorează
-                    precizia, confortul și calitatea japoneză superioară în
-                    fiecare detaliu.
+                    Forfecuța pentru cuticule PRO19 este rezultatul unei
+                    combinații perfecte între design ergonomic și
+                    funcționalitate profesională. Lama subțire, cu lungimea de
+                    20 mm, este ascuțită manual pentru a asigura o tăiere fină
+                    și precisă. Curbura lamei permite o manevrare ușoară și
+                    eficientă, adaptată atât nevoilor tehnicienilor
+                    profesioniști, cât și celor care aleg îngrijirea personală
+                    acasă. <br /> Fabricată din oțel inoxidabil japonez de
+                    înaltă calitate, forfecuța este rezistentă la sterilizare și
+                    la soluțiile de dezinfectare, păstrându-și performanța în
+                    timp fără a necesita reascuțire frecventă. Mânerul ergonomic
+                    este gândit pentru a reduce efortul în timpul utilizării și
+                    pentru a oferi un control deplin în fiecare mișcare – un
+                    detaliu ce transformă rutina într-o experiență plăcută.
+                    <br />
+                    <b>Instrucțiuni de întreținere:</b> <br /> ✔ După utilizare,
+                    păstrează forfecuța într-un loc uscat și curat. <br />✔ Se
+                    recomandă acoperirea cu capacul de protecție inclus. <br />
+                    ✘ Evită contactul cu acizi sau substanțe corozive. <br />
+                    ✘ Nu curăța cu obiecte metalice sau abrazive. <br /> ✘ Evită
+                    impactul cu suprafețe dure. <br />
+                    Un instrument creat pentru cei care caută precizie, confort
+                    și durabilitate – în fiecare tăietură.
                   </p>
                 </div>
               </div>

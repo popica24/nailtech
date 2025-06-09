@@ -125,6 +125,15 @@ const Pro20 = () => {
                     lubrifierea periodică garantează performanțe constante pe
                     termen lung. Instrumentul ideal pentru cei care nu acceptă
                     compromisuri în materie de calitate și precizie.
+                    <br />
+                    <b>Instrucțiuni de întreținere:</b> <br /> ✔ După utilizare,
+                    păstrează forfecuța într-un loc uscat și curat. <br />✔ Se
+                    recomandă acoperirea cu capacul de protecție inclus. <br />
+                    ✘ Evită contactul cu acizi sau substanțe corozive. <br />
+                    ✘ Nu curăța cu obiecte metalice sau abrazive. <br /> ✘ Evită
+                    impactul cu suprafețe dure. <br />
+                    Un instrument creat pentru cei care caută precizie, confort
+                    și durabilitate – în fiecare tăietură.
                   </p>
                 </div>
               </div>
