@@ -14,7 +14,6 @@ const Navbar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.log(location.pathname + location.hash);
     setGalleryOpen(false);
     setIsMenuOpen(false);
   }, [location.pathname, location.hash]);

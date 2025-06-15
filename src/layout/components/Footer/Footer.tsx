@@ -108,7 +108,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+          <div className="flex flex-col md:flex-row items-start md:items-center w-full justify-start md:justify-between my-4 px-4 md:px-0">
+            <img
+              src="sal.svg"
+              alt=""
+              width={250}
+              height={100}
+              className="mb-4 md:mb-0"
+            />
+            <img src="sol.svg" alt="" width={250} height={100} />
+          </div>
+        </div>{" "}
       </footer>
       <span className="flex items-center justify-center">
         Made by{" "}
