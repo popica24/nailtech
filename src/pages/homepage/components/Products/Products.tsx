@@ -44,12 +44,12 @@ const Products = () => {
               <Product
                 image="Products/Pro19/cover.jpg"
                 link="produse/pro19"
-                name="Foarfecuta Pro 19"
+                name="Forfecuta Pro 19"
               />
               <Product
                 image="Products/Pro19/cover.jpg"
                 link="produse/pro20"
-                name="Foarfecuta Pro 20"
+                name="Forfecuta Pro 20"
               />
             </div>
           </div>

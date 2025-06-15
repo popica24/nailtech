@@ -137,6 +137,13 @@ const Pro19 = () => {
                     Un instrument creat pentru cei care caută precizie, confort
                     și durabilitate – în fiecare tăietură.
                   </p>
+                  <br />
+                  <p>
+                    Recomandare importantă: După fiecare proces de sterilizare,
+                    se recomandă lubrifierea îmbinării la șurub cu orice tip de
+                    ulei pentru menținerea funcționării optime și prelungirea
+                    duratei de viață a instrumentului.
+                  </p>
                 </div>
               </div>
             </div>
