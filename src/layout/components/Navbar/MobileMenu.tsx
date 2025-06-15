@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+//@ts-ignore
+import { HashLink as Link } from "react-router-hash-link";
 
 type Props = {
   visible: boolean;
@@ -41,7 +42,8 @@ const MobileMenu = (props: Props) => {
             <ul className="bix-menu">
               <li className="nav-item relative">
                 <Link
-                  to="/"
+                  to="/#acasa"
+                  smooth
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Acasa
@@ -49,7 +51,8 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"/#cursuri-fizice"}
+                  to="/#cursuri-fizice"
+                  smooth
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Cursuri Fizice
@@ -73,7 +76,8 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"/#recenzii"}
+                  to="/#recenzii"
+                  smooth
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Recenzii
@@ -89,7 +93,8 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"/#despre-mine"}
+                  to="/#despre-mine"
+                  smooth
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Despre Mine

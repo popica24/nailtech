@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
-import { Link } from "react-router-dom";
+//@ts-ignore
+import { HashLink as Link } from "react-router-hash-link";
+import { useLocation } from "react-router-dom";
 import ShoppingCart from "../../../components/ShoppingCart";
 import { useCart } from "../../../CartContext";
 import Lightbox from "yet-another-react-lightbox";
@@ -9,6 +11,13 @@ const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    console.log(location.pathname + location.hash);
+    setGalleryOpen(false);
+    setIsMenuOpen(false);
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,7 +68,7 @@ const Navbar = () => {
           <div className="flex flex-wrap w-full">
             <div className="w-full px-[12px]">
               <nav className="navbar navbar-expand-lg bix-navbar transition-all duration-[0.3s] ease-in-out p-[15px] bg-white border-[1px] border-solid border-[#111a24] rounded-[30px] relative z-[3] flex items-center justify-between max-[992px]:flex-nowrap">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" smooth to="/#acasa">
                   <img
                     src="/logo.jpg"
                     alt="logo"
@@ -89,19 +98,21 @@ const Navbar = () => {
                   <ul className="navbar-nav bix-menu m-[0] pl-[0] flex flex-wrap min-[992px]:flex-row">
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <Link
+                        smooth
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
-                        to="/"
+                        to="/#acasa"
                       >
                         Acasa
                       </Link>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                      <a
+                      <Link
+                        smooth
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
-                        href="/#cursuri-fizice"
+                        to="/#cursuri-fizice"
                       >
                         Cursuri Fizice
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <Link
@@ -120,12 +131,13 @@ const Navbar = () => {
                       </Link>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                      <a
+                      <Link
+                        smooth
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
                         href="/#recenzii"
                       >
                         Recenzii
-                      </a>
+                      </Link>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <span
@@ -136,12 +148,13 @@ const Navbar = () => {
                       </span>
                     </li>
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
-                      <a
-                        href="/#despre-mine"
+                      <Link
+                        smooth
+                        to="/#despre-mine"
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
                       >
                         Despre Mine
-                      </a>
+                      </Link>
                     </li>
                     <li
                       className="nav-item transition-all duration-[0.3s] ease-in-out mx-[30px] flex items-center cursor-pointer"

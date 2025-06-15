@@ -2,34 +2,84 @@
 (function ($) {
   ("use strict");
 
-  /* Loader */
-  // Handle multiple navigation events
+  /* Improved Loader */
   $(document).ready(function () {
-    // Initial page load handler
-    $(window).on("load", fadeOutLoader);
+    let loaderTimeout;
+    let isLoaderVisible = false;
 
-    // Handle navigation within single-page applications
-    $(document).on("click", "a[href]", function () {
-      $(".bix-loader").fadeIn("fast");
-      setTimeout(fadeOutLoader, 300); // Short delay for the loader to be visible
-    });
-
-    // For browser navigation (back/forward buttons)
-    $(window).on("popstate", function () {
-      $(".bix-loader").fadeIn("fast");
-      setTimeout(fadeOutLoader, 300);
-    });
-
-    // For programmatic navigation or hash changes
-    $(window).on("hashchange", fadeOutLoader);
-
-    // When content is loaded via AJAX
-    $(document).ajaxComplete(fadeOutLoader);
-
-    // Helper function to fade out loader
-    function fadeOutLoader() {
-      $(".bix-loader").fadeOut("slow");
+    // Show loader function
+    function showLoader() {
+      if (!isLoaderVisible) {
+        isLoaderVisible = true;
+        $(".bix-loader").stop(true, false).fadeIn("fast");
+      }
     }
+
+    // Hide loader function with safety timeout
+    function hideLoader(delay = 0) {
+      clearTimeout(loaderTimeout);
+      loaderTimeout = setTimeout(function () {
+        isLoaderVisible = false;
+        $(".bix-loader").stop(true, false).fadeOut("slow");
+      }, delay);
+    }
+
+    // Force hide loader (emergency fallback)
+    function forceHideLoader() {
+      clearTimeout(loaderTimeout);
+      isLoaderVisible = false;
+      $(".bix-loader").stop(true, false).hide();
+    }
+
+    // Initial page load
+    $(window).on("load", function () {
+      hideLoader(100);
+    });
+
+    // Handle clicks on links
+    $(document).on("click", "a[href]", function (e) {
+      const href = $(this).attr("href");
+
+      // Don't show loader for hash links, mailto, tel, etc.
+      if (
+        href.startsWith("#") ||
+        href.startsWith("mailto:") ||
+        href.startsWith("tel:")
+      ) {
+        return;
+      }
+
+      showLoader();
+      hideLoader(500); // Longer delay for navigation
+    });
+
+    // Browser navigation
+    $(window).on("popstate", function () {
+      showLoader();
+      hideLoader(300);
+    });
+
+    // Hash changes
+    $(window).on("hashchange", function () {
+      hideLoader(100);
+    });
+
+    // AJAX completion
+    $(document).ajaxComplete(function () {
+      hideLoader(200);
+    });
+
+    // Safety net - force hide loader after 3 seconds
+    $(document).on("click", "a[href]", function () {
+      setTimeout(forceHideLoader, 3000);
+    });
+
+    // Also hide on page visibility change (when user comes back to tab)
+    $(document).on("visibilitychange", function () {
+      if (!document.hidden) {
+        hideLoader(100);
+      }
+    });
   });
 
   /*-- On click menu scroll section to section -- */
