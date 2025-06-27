@@ -497,7 +497,7 @@ const IndividualCourse = () => {
           </div>
         </div>
 
-        <CourseContent content={dropdownSections} price={"1400RON / ZI"} />
+        <CourseContent content={dropdownSections} price={"1500-2000RON / ZI"} />
 
         <section
           className="bg-gray-100 w-full mx-auto"
