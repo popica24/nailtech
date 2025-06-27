@@ -11,7 +11,7 @@ const AboutMe = () => {
               <div
                 className="bix-banner mb-[30px] flex justify-center text-center max-[1199px]:mb-[25px] max-[767px]:mb-[20px] "
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-delay="400"
               >
                 <h4 className="montserrat-400 text-[36px] font-bold text-[#111a24] tracking-[0.03rem] leading-[1.2] max-[1199px]:text-[32px] max-[767px]:text-[28px] max-[575px]:text-[24px]">
@@ -21,7 +21,7 @@ const AboutMe = () => {
               <div
                 className="bix-banner-line mb-[110px] "
                 data-aos="fade-up"
-                data-aos-duration="2000"
+                data-aos-duration="1000"
                 data-aos-delay="600"
               >
                 <span className="inner-border relative flex justify-center"></span>
@@ -30,7 +30,7 @@ const AboutMe = () => {
             <div
               className="max-[1199px]:order-2 min-[1200px]:w-[33.33%] min-[992px]:w-[50%] w-full px-[12px] mb-[30px] "
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="400"
             >
               <div className="bix-about-contact h-full flex flex-col justify-center">
@@ -65,7 +65,7 @@ const AboutMe = () => {
             <div
               className="max-[1199px]:order-1 min-[1200px]:w-[33.33%] min-[992px]:w-[100%] w-full px-[12px] mb-[30px] "
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="600"
             >
               <div className="bix-about-img border-[1px] border-solid border-[#111a24] p-[15px] rounded-[200px] relative max-[1199px]:max-w-fit max-[1199px]:m-auto">
@@ -138,7 +138,12 @@ const AboutMe = () => {
                 className="bix-skill h-full flex flex-col justify-center max-[1199px]:h-auto"
                 id="progress"
               >
-                <div className="bix-about-contact h-full flex flex-col justify-center">
+                <div
+                  className="bix-about-contact h-full flex flex-col justify-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
                   <p className="mb-[16px] montserrat-400 text-[14px] text-[#495461] font-normal leading-[26px] tracking-[0.03rem]">
                     În timp, am simțit nevoia să dau mai departe ceea ce am
                     învățat. Am urmat două cursuri de formatori, iar la unul

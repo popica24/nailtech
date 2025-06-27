@@ -68,7 +68,7 @@ const MobileMenu = (props: Props) => {
               </li>
               <li className="nav-item relative">
                 <Link
-                  to={"/shop"}
+                  to="/#shop"
                   className="nav-link mb-[12px] py-[8px] px-[16px] block capitalize text-[#777] border-[1px] border-solid border-[#eae8ef] rounded-[10px] montserrat-300 leading-[26px] text-[14px] font-medium tracking-[0.03rem]"
                 >
                   Shop

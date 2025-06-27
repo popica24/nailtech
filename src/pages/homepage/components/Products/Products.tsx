@@ -5,7 +5,7 @@ const Products = () => {
     <>
       <section
         className="section-projects py-[50px] max-[991px]:py-[40px] max-[767px]:py-[35px]"
-        id="projects"
+        id="shop"
       >
         <div className="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
           <div className="flex flex-wrap w-full">
@@ -30,7 +30,12 @@ const Products = () => {
                 <span className="inner-border relative flex justify-center"></span>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[-24px]">
+            <div
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[-24px]"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+              data-aos-delay="400"
+            >
               <Product
                 image="Products/Pro6/cover.jpg"
                 link="produse/pro6"

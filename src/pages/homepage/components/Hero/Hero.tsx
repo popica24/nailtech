@@ -17,8 +17,8 @@ const Hero = () => {
               <div
                 className="bix-hero-img relative "
                 data-aos="fade-up"
-                data-aos-duration="2000"
-                data-aos-delay="600"
+                data-aos-duration="1000"
+                data-aos-delay="100"
               >
                 <div className="hero-inner-img relative">
                   <img
@@ -35,24 +35,24 @@ const Hero = () => {
                 <h4
                   className="mb-[8px] montserrat-400 tracking-[0.03rem] leading-[1.2] text-[35px] font-bold text-[var(--crem-cald)] max-[1399px]:text-[32px] max-[1199px]:text-[28px] max-[767px]:text-[24px] "
                   data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="600"
+                  data-aos-duration="1500"
+                  data-aos-delay="300"
                 >
                   Nail Artist & Instructor
                 </h4>
                 <h1
                   className="mb-[16px] montserrat-700 text-[78px] text-[#2c2c2c] font-bold relative tracking-[0.03rem] leading-[1.2] max-[1399px]:text-[70px] max-[1199px]:text-[52px] max-[767px]:text-[38px] "
                   data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="700"
+                  data-aos-duration="1500"
+                  data-aos-delay="400"
                 >
                   Scintei Florina
                 </h1>
                 <p
                   className="montserrat-400 text-[27px] font-semibold text-[#2c2c2c] leading-[26px] tracking-[0.03rem] max-[1399px]:text-[24px] max-[1199px]:text-[20px] max-[767px]:text-[18px] "
                   data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="800"
+                  data-aos-duration="1500"
+                  data-aos-delay="500"
                 >
                   Peste
                   <span className="ms-[5px] font-bold text-[var(--crem-cald)]">
@@ -63,8 +63,8 @@ const Hero = () => {
                 <div
                   className="bix-buttons m-[-10px] pt-[50px] flex flex-wrap relative max-[991px]:pt-[20px] max-[575px]:justify-center "
                   data-aos="fade-up"
-                  data-aos-duration="2000"
-                  data-aos-delay="900"
+                  data-aos-duration="1500"
+                  data-aos-delay="600"
                 >
                   <a
                     href="#cursuri-fizice"

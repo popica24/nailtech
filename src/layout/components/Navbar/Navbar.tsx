@@ -124,7 +124,7 @@ const Navbar = () => {
                     <li className="nav-item transition-all duration-[0.3s] ease-in-out ml-[30px]">
                       <Link
                         className="nav-link transition-all duration-[0.3s] ease-in-out montserrat-300 tracking-[0.03rem] p-[0] text-[15px] font-medium leading-[40px] capitalize text-[#1b1c20] flex items-center relative hover:text-[var(--crem-cald)]"
-                        to="/shop"
+                        to="/#shop"
                       >
                         Shop
                       </Link>

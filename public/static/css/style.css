@@ -694,30 +694,6 @@ h6 {
   z-index: -1;
 }
 
-.bix-hero-contact:before {
-  content: "";
-  height: 70px;
-  width: 70px;
-  background-image: url("/shapes/shape-one.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: -40px;
-  left: 50px;
-  z-index: -1;
-}
-.bix-hero-contact:after {
-  content: "";
-  height: 50px;
-  width: 25px;
-  background-image: url("/shapes/shape-2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
 .bix-hero-contact h1:after {
   content: "";
   height: 70px;

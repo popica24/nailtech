@@ -10,7 +10,7 @@ const Achivements = () => {
             <div
               className="bix-banner mb-[30px] flex justify-center text-center max-lg:mb-[25px] max-md:mb-[20px]"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="400"
             >
               <h4 className="montserrat-400 text-[36px] font-bold text-[#111a24] tracking-[0.03rem] leading-[1.2] max-lg:text-[32px] max-md:text-[28px] max-md:text-[24px]">
@@ -21,7 +21,7 @@ const Achivements = () => {
             <div
               className="bix-banner-line mb-[110px]"
               data-aos="fade-up"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-delay="600"
             >
               <span className="inner-border relative flex justify-center"></span>
@@ -41,7 +41,7 @@ const Achivements = () => {
                           <div
                             className="bix-achievement-box left border-[1px] border-solid border-[#111a24] p-[30px] rounded-[30px] bg-[#f7f5fb] relative max-md:mt-[12px] max-md:mb-[24px]"
                             data-aos="fade-up"
-                            data-aos-duration="2000"
+                            data-aos-duration="1000"
                             data-aos-delay="400"
                           >
                             <div className="achievement-year w-[100px] h-full absolute top-[0] flex items-center justify-center rotate-[270deg] z-10 right-[-82px] max-md:block max-md:rotate-0 max-md:top-[-13px] max-md:left-[45px]">
@@ -66,7 +66,7 @@ const Achivements = () => {
                           <div
                             className="bix-achievement-box left border-[1px] border-solid border-[#111a24] mt-[150px] p-[30px] rounded-[30px] bg-[#f7f5fb] relative max-md:mt-[12px] max-md:mb-[24px] aos-init"
                             data-aos="fade-up"
-                            data-aos-duration="2000"
+                            data-aos-duration="1000"
                             data-aos-delay="600"
                           >
                             <div className="achievement-year w-[100px] h-full absolute top-[0] flex items-center justify-center rotate-[270deg] z-10 right-[-82px] max-md:block max-md:rotate-0 max-md:top-[-13px] max-md:left-[45px]">
@@ -88,7 +88,7 @@ const Achivements = () => {
                           <div
                             className="bix-achievement-box right border-[1px] border-solid border-[#111a24] mt-[150px] p-[30px] rounded-[30px] bg-[#f7f5fb] relative max-md:mt-[12px] max-md:mb-[24px]"
                             data-aos="fade-up"
-                            data-aos-duration="2000"
+                            data-aos-duration="1000"
                             data-aos-delay="500"
                           >
                             <div className="achievement-year w-[100px] h-full absolute top-[0] flex items-center justify-center rotate-[270deg] z-[1] left-[-82px] max-md:block max-md:rotate-0 max-md:top-[-13px] max-md:left-[45px]">
@@ -110,7 +110,7 @@ const Achivements = () => {
                           <div
                             className="bix-achievement-box right border-[1px] border-solid border-[#111a24] mt-[150px] p-[30px] rounded-[30px] bg-[#f7f5fb] relative max-md:mt-[12px] max-md:mb-[24px] aos-init"
                             data-aos="fade-up"
-                            data-aos-duration="2000"
+                            data-aos-duration="1000"
                             data-aos-delay="700"
                           >
                             <div className="achievement-year w-[100px] h-full absolute top-0 flex items-center justify-center rotate-[270deg] z-10 -left-[82px] max-md:block max-md:rotate-0 max-md:top-[-13px] max-md:left-[45px]">
