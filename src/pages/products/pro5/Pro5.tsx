@@ -1,15 +1,22 @@
-import { toast } from "react-toastify";
 import { useCart } from "../../../CartContext";
 import { items } from "../../../data";
 import Footer from "../../../layout/components/Footer";
+import Swal from "sweetalert2";
 
 const Pro5 = () => {
   const { addToCart } = useCart();
+
   const handleAddToCart = () => {
-    const id = 2;
-    toast.success("Pusherul PRO5 a fost adaugata in cos !");
-    const item = items.find((item) => item.id === id);
-    if (item) addToCart(item.id, item.name, item.price);
+    Swal.fire({
+      title: "Adaugat in cos!",
+      text: "Pusherul Pro5 a fost adaugat in cos !",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then(() => {
+      const id = 2;
+      const item = items.find((item) => item.id === id);
+      if (item) addToCart(item.id, item.name, item.price);
+    });
   };
   return (
     <section className="montserrat-400 section-hero mt-[100px] relative pb-[50px] pt-[100px] max-[991px]:h-auto max-[991px]:mt-[95px] max-[991px]:pb-[40px] max-[991px]:pt-[80px] max-[767px]:pb-[35px] max-[767px]:pt-[70px]">
@@ -135,7 +142,6 @@ const Pro5 = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

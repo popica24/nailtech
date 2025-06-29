@@ -150,7 +150,6 @@ const OnlineCourses = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

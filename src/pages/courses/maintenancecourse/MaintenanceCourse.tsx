@@ -1,5 +1,6 @@
 import CourseContent from "../../../components/CourseContent";
 import Footer from "../../../layout/components/Footer";
+import { buyCourse } from "../../../utils/functions";
 const dropdownSections = [
   {
     key: "descriere",
@@ -503,12 +504,17 @@ const MaintenanceCourse = () => {
                 de corecție și întreținere și să ofere servicii premium,
                 aplicabile imediat în salon.
               </p>
-              <a
-                href="https://wa.me/+40749095803?text=Buna%20%21%20Legat%20de%20cursul%20de%20mentenanta%2C%20ma%20numesc..."
-                className="w-full cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
+              <button
+                onClick={() =>
+                  buyCourse(
+                    8,
+                    "Pentru a-ți rezerva locul la cursul de intretinere, este necesar un avans de 600 de lei. După efectuarea plății, vei fi redirecționat către pagina de contact pentru a lua legătura cu noi. Suntem aici să te ghidăm în fiecare pas!"
+                  )
+                }
+                className="w-full md:w-min whitespace-nowrap cursor-pointer transition-all duration-[0.3s] ease-in-out py-[8px] px-[10px] montserrat-400 text-base font-semibold text-white rounded-[5px] bg-[#A57865]"
               >
                 Inscrie-te si tu !
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -596,7 +602,6 @@ const MaintenanceCourse = () => {
           </div>
         </section>
       </div>
-      <Footer />
     </>
   );
 };

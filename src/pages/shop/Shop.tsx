@@ -150,7 +150,6 @@ const Shop = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

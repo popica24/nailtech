@@ -1,4 +1,3 @@
-import { toast } from "react-toastify";
 import { useCart } from "../../../CartContext";
 import { items } from "../../../data";
 import Footer from "../../../layout/components/Footer";
@@ -6,7 +5,7 @@ import Footer from "../../../layout/components/Footer";
 const Pro20 = () => {
   const { addToCart } = useCart();
   const handleAddToCart = () => {
-    toast.success("Forfecuta PRO20 a fost adaugata in cos !");
+
     const id = 4;
     const item = items.find((item) => item.id === id);
     if (item) addToCart(item.id, item.name, item.price);
@@ -148,7 +147,6 @@ const Pro20 = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };

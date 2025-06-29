@@ -97,7 +97,6 @@ const Photos = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 };
