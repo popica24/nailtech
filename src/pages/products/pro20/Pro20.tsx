@@ -1,11 +1,9 @@
 import { useCart } from "../../../CartContext";
 import { items } from "../../../data";
-import Footer from "../../../layout/components/Footer";
 
 const Pro20 = () => {
   const { addToCart } = useCart();
   const handleAddToCart = () => {
-
     const id = 4;
     const item = items.find((item) => item.id === id);
     if (item) addToCart(item.id, item.name, item.price);

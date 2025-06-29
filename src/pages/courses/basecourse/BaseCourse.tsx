@@ -1,5 +1,4 @@
 import CourseContent from "../../../components/CourseContent";
-import Footer from "../../../layout/components/Footer";
 import { buyCourse } from "../../../utils/functions";
 const dropdownSections = [
   {

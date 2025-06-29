@@ -1,5 +1,3 @@
-import Footer from "../../layout/components/Footer";
-
 const Shop = () => {
   return (
     <>

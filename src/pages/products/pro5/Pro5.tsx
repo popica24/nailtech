@@ -1,6 +1,5 @@
 import { useCart } from "../../../CartContext";
 import { items } from "../../../data";
-import Footer from "../../../layout/components/Footer";
 import Swal from "sweetalert2";
 
 const Pro5 = () => {

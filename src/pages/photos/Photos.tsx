@@ -1,5 +1,3 @@
-import Footer from "../../layout/components/Footer";
-
 const Photos = () => {
   return (
     <section className="mt-[150px] container flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">

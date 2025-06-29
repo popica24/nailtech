@@ -1,6 +1,5 @@
 import { useCart } from "../../../CartContext";
 import { items } from "../../../data";
-import Footer from "../../../layout/components/Footer";
 
 const Pro6 = () => {
   const { addToCart } = useCart();
