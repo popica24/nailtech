@@ -11,6 +11,7 @@ import MaintenanceCourse from "../pages/courses/maintenancecourse/MaintenanceCou
 import OnlineCourses from "../pages/courses/onlinecourses";
 import IndividualCourse from "../pages/courses/individualcourse";
 import SlimCourse from "../pages/courses/slimcourse";
+import KitComboPro from "../pages/products/kitcombopro";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "produse/pro20",
         element: <Pro20 />,
+      },
+      {
+        path: "produse/kit-combo-pro",
+        element: <KitComboPro />,
       },
       {
         path: "galerie-foto",

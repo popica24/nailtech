@@ -31,11 +31,17 @@ const Products = () => {
               </div>
             </div>
             <div
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-[-24px]"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mb-[-24px]"
               data-aos="fade-up"
               data-aos-duration="2000"
               data-aos-delay="400"
             >
+              <Product
+                image="Products/KitComboPro/cover.jpg"
+                link="produse/kit-combo-pro"
+                name="Kit combo Pro"
+              />
+
               <Product
                 image="Products/Pro6/cover.jpg"
                 link="produse/pro6"
